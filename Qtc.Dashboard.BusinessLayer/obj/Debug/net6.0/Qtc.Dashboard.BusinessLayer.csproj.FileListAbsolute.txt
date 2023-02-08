@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\bin\Debug\net6.0\Qtc.Dashboard.BusinessLayer.deps.json
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\bin\Debug\net6.0\Qtc.Dashboard.BusinessLayer.dll
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\bin\Debug\net6.0\Qtc.Dashboard.BusinessLayer.pdb
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\bin\Debug\net6.0\Dashboard.Common.dll
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\bin\Debug\net6.0\Dashboard.Common.pdb
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\Qtc.Dashboard.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\Qtc.Dashboard.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\Qtc.Dashboard.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\Qtc.Dashboard.BusinessLayer.AssemblyInfo.cs
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\Qtc.Dashboard.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\Qtc.Dashboard.BusinessLayer.csproj.CopyComplete
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\Qtc.Dashboard.BusinessLayer.dll
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\refint\Qtc.Dashboard.BusinessLayer.dll
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\Qtc.Dashboard.BusinessLayer.pdb
+C:\Users\Admin\Documents\QTC\Qtc.Dashboard.BusinessLayer\obj\Debug\net6.0\ref\Qtc.Dashboard.BusinessLayer.dll
