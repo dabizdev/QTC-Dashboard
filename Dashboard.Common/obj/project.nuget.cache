@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "cvmcpDvBDhodi65CVZSOaVsL6aNtY4odNqKI8S7qNSHgWZ8IpJqSwjL6hvQsd7zMvC8cr01olUo/FzbLYwCl3Q==",
+  "dgSpecHash": "Rjgajcw2bKLv5X1bBQOvJAocIRZhRtQZtz6i5GyieClSpiLGb3YgDyWFcr62h00RV/K8vqc74FSo/PDY6xDt2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\amanese2\\Desktop\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\amanese2\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\amanese2\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\amanese2\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\amanese2\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\amanese2\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\amanese2\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\amanese2\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

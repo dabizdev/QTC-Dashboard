@@ -1,0 +1,5 @@
+C:\Users\amanese2\Desktop\QTC-Dashboard\Qtc.Dashboard.ViewModelLayer\obj\Debug\net6.0\Qtc.Dashboard.ViewModelLayer.csproj.AssemblyReference.cache
+C:\Users\amanese2\Desktop\QTC-Dashboard\Qtc.Dashboard.ViewModelLayer\obj\Debug\net6.0\Qtc.Dashboard.ViewModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amanese2\Desktop\QTC-Dashboard\Qtc.Dashboard.ViewModelLayer\obj\Debug\net6.0\Qtc.Dashboard.ViewModelLayer.AssemblyInfoInputs.cache
+C:\Users\amanese2\Desktop\QTC-Dashboard\Qtc.Dashboard.ViewModelLayer\obj\Debug\net6.0\Qtc.Dashboard.ViewModelLayer.AssemblyInfo.cs
+C:\Users\amanese2\Desktop\QTC-Dashboard\Qtc.Dashboard.ViewModelLayer\obj\Debug\net6.0\Qtc.Dashboard.ViewModelLayer.csproj.CoreCompileInputs.cache

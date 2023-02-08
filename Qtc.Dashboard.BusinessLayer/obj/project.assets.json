@@ -1050,6 +1050,9 @@
       "Dashboard.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "7.0.0"
+        },
         "compile": {
           "bin/placeholder/Dashboard.Common.dll": {}
         },
@@ -3240,19 +3243,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\amanese2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\amanese2\\Desktop\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj",
       "projectName": "Qtc.Dashboard.BusinessLayer",
-      "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\obj\\",
+      "projectPath": "C:\\Users\\amanese2\\Desktop\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj",
+      "packagesPath": "C:\\Users\\amanese2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\amanese2\\Desktop\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\amanese2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3266,8 +3269,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj"
+            "C:\\Users\\amanese2\\Desktop\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj": {
+              "projectPath": "C:\\Users\\amanese2\\Desktop\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj"
             }
           }
         }
