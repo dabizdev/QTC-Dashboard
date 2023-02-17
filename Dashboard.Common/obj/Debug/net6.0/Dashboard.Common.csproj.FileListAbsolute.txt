@@ -10,3 +10,15 @@ C:\Users\Admin\Documents\QTC\Dashboard.Common\obj\Debug\net6.0\Dashboard.Common.
 C:\Users\Admin\Documents\QTC\Dashboard.Common\obj\Debug\net6.0\refint\Dashboard.Common.dll
 C:\Users\Admin\Documents\QTC\Dashboard.Common\obj\Debug\net6.0\Dashboard.Common.pdb
 C:\Users\Admin\Documents\QTC\Dashboard.Common\obj\Debug\net6.0\ref\Dashboard.Common.dll
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\bin\Debug\net6.0\Dashboard.Common.deps.json
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\bin\Debug\net6.0\Dashboard.Common.dll
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\bin\Debug\net6.0\Dashboard.Common.pdb
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\obj\Debug\net6.0\Dashboard.Common.csproj.AssemblyReference.cache
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\obj\Debug\net6.0\Dashboard.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\obj\Debug\net6.0\Dashboard.Common.AssemblyInfoInputs.cache
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\obj\Debug\net6.0\Dashboard.Common.AssemblyInfo.cs
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\obj\Debug\net6.0\Dashboard.Common.csproj.CoreCompileInputs.cache
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\obj\Debug\net6.0\Dashboard.Common.dll
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\obj\Debug\net6.0\refint\Dashboard.Common.dll
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\obj\Debug\net6.0\Dashboard.Common.pdb
+C:\Users\karin\Desktop\QTC Dashboard Web Component\Dashboard.Common\obj\Debug\net6.0\ref\Dashboard.Common.dll
