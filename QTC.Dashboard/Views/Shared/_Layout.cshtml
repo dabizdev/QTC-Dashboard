@@ -50,7 +50,10 @@
                 Applications
             </div>
 
-            @* Nav Item - Pages Collapse Menu *@
+            @* TODO: Replace next two items and replace with a OrganizationItem that is a component created*@
+            @await Component.InvokeAsync("OrganizationItems")
+
+            @* Nav Item - Pages Collapse Menu, Start of hard coded values
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="true" aria-controls="collapseTwo">
@@ -60,13 +63,12 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">VA's applications:</h6>
-                        <a class="collapse-item" href="#">Application 1</a>
-                        <a class="collapse-item" href="#">Application 2</a>
+                        @await Component.InvokeAsync("Applications")
+
                     </div>
                 </div>
             </li>
 
-            @* Nav Item - Utilities Collapse Menu *@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                    aria-expanded="true" aria-controls="collapseUtilities">
@@ -77,12 +79,11 @@
                      data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">RHRP's applications:</h6>
-                        <a class="collapse-item" href="#">Application 1</a>
-                        <a class="collapse-item" href="#">Application 2</a>
-                        <a class="collapse-item" href="#">Application 3</a>
+                        @await Component.InvokeAsync("Applications")
                     </div>
                 </div>
             </li>
+            End of the hard coded side bar items*@
 
             @* Divider *@
             <hr class="sidebar-divider d-none d-md-block">

@@ -1,0 +1,27 @@
+﻿@model List<Dashboard.Common.DataModels.OrgsWithApps> // gets the OrgsWithApps data model
+
+
+@*Loop through all the applications with organizations retreived in ViewComponents/OrganizationItemViewComponents*@
+@foreach (var item in Model)
+{
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+        aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <!-- Get the name of the current organization and display-->
+            <span>@item.organization.Name</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <!-- Display sub window with org name applications-->
+                <h6 class="collapse-header">@item.organization.Name's applications:</h6>
+                    <!-- Loop through all of the applications of the current organization -->
+                    @foreach (var currentApplication in item.applications)
+                    {
+                        <!--Display the current application here-->
+                    <a class="collapse-item" href="@currentApplication.ApplicationName">@currentApplication.ApplicationName</a>
+                    }
+            </div>
+        </div>
+    </li>
+}

@@ -1,0 +1,9 @@
+﻿@model List<Dashboard.Common.DataModels.Application>
+
+
+@*Loop through all the applications created in ViewComponents/ApplicationViewComponent *@
+
+@foreach (var item in Model)
+{
+    <a class="collapse-item" href="@item.ApplicationName">@item.ApplicationName</a>
+}

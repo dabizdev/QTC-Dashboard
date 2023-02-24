@@ -116,7 +116,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
         public void GetUserPermissions(DashboardViewModel vm)
         {
-            vm.Permissions = AuthPermissions.GetUserPermissions(User.ToString());
+            //vm.Permissions = AuthPermissions.GetUserPermissions(User.ToString());
         }
 
         public void SetViewModelMessages(DashboardViewModel vm)

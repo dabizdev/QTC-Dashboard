@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Common", "..\Dash
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qtc.Dashboard.ViewModelLayer", "..\Qtc.Dashboard.ViewModelLayer\Qtc.Dashboard.ViewModelLayer.csproj", "{D5F64D5C-D79D-4259-90F8-35CA96224901}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.DA.Library", "..\Common.DA.Library\Common.DA.Library.csproj", "{2C8D3CDA-5D31-4AA4-8BE4-D1581940DF39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.DA.Library", "..\Common.DA.Library\Common.DA.Library.csproj", "{2C8D3CDA-5D31-4AA4-8BE4-D1581940DF39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

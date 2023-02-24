@@ -1,0 +1,54 @@
+﻿
+@*@model QTC.Dashboard.WebApp.Views.ErrorTable.IndexModel
+*@
+
+@*@using QTC.Dashboard.WebApp.Models.
+@{  
+    var Headers = ViewData["Headers"] as Headers;   
+}*@
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewData["Title"] = "Errors Page";
+}
+
+<div class="container-fluid">
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Table Example</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable">
+                    <thead>
+                        <tr>
+                           @* @{
+                                foreach(var currentHeader in Headers){
+                                    <td>@currentHeader</td>
+                                }
+                            }*@
+                            <td>column here</td>
+                        </tr>
+                    </thead>
+                    @*<tbody>
+
+                        @{
+                            for (int i = 0; i < errors.GetLength(0); i++)
+                            {
+                                            <tr>
+                                    @{
+                                        for (int j = 0; j < errors.GetLength(1); j++)
+                                        {
+                                                                    <td>@errors[i, j]</td>
+                                        }
+                                    }
+                                            </tr>
+                            }
+                        }
+                    </tbody>*@
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
