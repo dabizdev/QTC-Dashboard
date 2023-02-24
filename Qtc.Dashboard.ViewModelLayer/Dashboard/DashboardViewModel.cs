@@ -40,22 +40,22 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         {
             // Initialize base class properties
             base.Init();
-            SearchEntity = new SearchEntity();
-            ViewEntity = new ViewEntity();
+            //SearchEntity = new SearchEntity();
+            //ViewEntity = new ViewEntity();
             EventAction = "list";
-            QtcHeaderImage = Utility.GetQtcHeaderImage;
+            //QtcHeaderImage = Utility.GetQtcHeaderImage;
             DisplayName = "EFMH";
         }
         #endregion
 
         #region Variables
-        public ViewEntity ViewEntity { get; set; }
-        public SearchEntity SearchEntity { get; set; }
-        public AuthUserPermissions Permissions { get; set; }
-        public List<RoleMappings> RoleMappings { get; set; }
+        //public ViewEntity ViewEntity { get; set; }
+        //public SearchEntity SearchEntity { get; set; }
+        //public AuthUserPermissions Permissions { get; set; }
+        //public List<RoleMappings> RoleMappings { get; set; }
         public string QtcHeaderImage { get; set; }
         public string? DisplayName { get; set; }
-        public List<SearchResultEntity> SearchResults { get; set; } = new List<SearchResultEntity>();
+        //public List<SearchResultEntity> SearchResults { get; set; } = new List<SearchResultEntity>();
 
 
         #endregion
@@ -69,10 +69,10 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             switch (EventAction.ToLower())
             {
                 case "list":
-                    this.Load();
+                    //this.Load();
                     break;
                 case "search":
-                    this.Search();
+                    //this.Search();
                     break;
                 default:
                     break;
