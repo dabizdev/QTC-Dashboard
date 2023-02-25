@@ -809,3 +809,7 @@ C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\obj\Debug\net6.0\QTC.
 C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\obj\Debug\net6.0\QTC.Dashboard.WebApp.genruntimeconfig.cache
 C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\obj\Debug\net6.0\ref\QTC.Dashboard.WebApp.dll
 C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\obj\Debug\net6.0\QTC.Dashboard.WebApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\Documents\QTC\QTC.Dashboard\bin\Debug\net6.0\Common.DA.Library.dll
+C:\Users\Admin\Documents\QTC\QTC.Dashboard\bin\Debug\net6.0\Qtc.Dashboard.ViewModelLayer.dll
+C:\Users\Admin\Documents\QTC\QTC.Dashboard\bin\Debug\net6.0\Qtc.Dashboard.ViewModelLayer.pdb
+C:\Users\Admin\Documents\QTC\QTC.Dashboard\bin\Debug\net6.0\Common.DA.Library.pdb

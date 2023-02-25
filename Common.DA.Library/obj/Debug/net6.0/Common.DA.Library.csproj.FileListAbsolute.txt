@@ -10,3 +10,15 @@ C:\Users\Jonathan\source\repos\QTC-Dashboard\Common.DA.Library\obj\Debug\net6.0\
 C:\Users\Jonathan\source\repos\QTC-Dashboard\Common.DA.Library\obj\Debug\net6.0\refint\Common.DA.Library.dll
 C:\Users\Jonathan\source\repos\QTC-Dashboard\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.pdb
 C:\Users\Jonathan\source\repos\QTC-Dashboard\Common.DA.Library\obj\Debug\net6.0\ref\Common.DA.Library.dll
+C:\Users\Admin\Documents\QTC\Common.DA.Library\bin\Debug\net6.0\Common.DA.Library.deps.json
+C:\Users\Admin\Documents\QTC\Common.DA.Library\bin\Debug\net6.0\Common.DA.Library.dll
+C:\Users\Admin\Documents\QTC\Common.DA.Library\bin\Debug\net6.0\Common.DA.Library.pdb
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.AssemblyInfo.cs
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.dll
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\refint\Common.DA.Library.dll
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.pdb
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\ref\Common.DA.Library.dll
