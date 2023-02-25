@@ -11,13 +11,13 @@ namespace QTC.Dashboard.WebApp.Views.ErrorTable
 {
     public class IndexModel : PageModel
     {
-        public List<Errors> errs;
+        /*public List<Errors> errs;
         public SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         public string[] Headers = new string[] { "Application Name", "Layer", "Module", "Alert", "AlertTeam", "Severity", "ServerName", "ErrorCode", "Error Message", "Error Date", "User", "View" };
-
+*/
         public IndexModel()
         {
-            List<Errors> errors = new List<Errors>();
+            /*List<Errors> errors = new List<Errors>();
 
             string query = "Select * FROM ErrorsTable"; // query that we want to execute
 
@@ -52,10 +52,10 @@ namespace QTC.Dashboard.WebApp.Views.ErrorTable
 
                 // add the current Error to the arraylist
                 errors.Add(currentError);
-            }
+            }*/
             
 
-            errs = errors;
+            //errs = errors;
             //Headers = new string[] { "Application Name", "Layer", "Module", "Alert", "AlertTeam", "Severity", "ServerName", "ErrorCode", "Error Message", "Error Date", "User", "View" };
 
         }

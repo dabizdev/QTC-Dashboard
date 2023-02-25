@@ -2,13 +2,10 @@
 @*@model QTC.Dashboard.WebApp.Views.ErrorTable.IndexModel
 *@
 
-@*@using QTC.Dashboard.WebApp.Models.
-@{  
-    var Headers = ViewData["Headers"] as Headers;   
-}*@
+@model Dashboard.Common.DataModels.ControllerModel.ErrorTableModel
 @{
 	Layout = "~/Views/Shared/_Layout.cshtml";
-	ViewData["Title"] = "Errors Page";
+	ViewData["Title"] = "XX-Application X";
 }
 
 <div class="container-fluid">
@@ -23,32 +20,37 @@
                 <table class="table table-bordered" id="dataTable">
                     <thead>
                         <tr>
-                           @* @{
-                                foreach(var currentHeader in Headers){
-                                    <td>@currentHeader</td>
-                                }
-                            }*@
-                            <td>column here</td>
+                            @* Print all the headers on the error page*@
+                            @foreach(var item in Model.headers){
+                                <td>@item</td>
+                            }
                         </tr>
                     </thead>
-                    @*<tbody>
+                    <tbody>
 
                         @{
-                            for (int i = 0; i < errors.GetLength(0); i++)
+                            foreach(var error in Model.errors)
                             {
-                                            <tr>
-                                    @{
-                                        for (int j = 0; j < errors.GetLength(1); j++)
-                                        {
-                                                                    <td>@errors[i, j]</td>
-                                        }
-                                    }
-                                            </tr>
+                                <tr>
+                                    <td>@error.ApplicationName</td>
+                                    <td>@error.Layer</td>
+                                    <td>@error.Module</td>
+                                    <td>@error.Alert</td>
+                                    <td>@error.AlertTeam</td>
+                                    <td>@error.Severity</td>
+                                    <td>@error.ServerName</td>
+                                    <td>@error.ErrorCode</td>
+                                    <td>@error.ErrorMessage</td>
+                                    <td>@error.ErrorDate</td>
+                                    <td>@error.User</td>
+                                    <td><a href="*">Show Button</a></td>
+                                </tr>
                             }
                         }
-                    </tbody>*@
+                    </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
+<!-- /.container-fluid -->
