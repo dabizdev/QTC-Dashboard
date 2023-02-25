@@ -33,6 +33,38 @@
       "PackagePath": "staticwebassets\\img\\undraw_profile.svg"
     },
     {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\js\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\js\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\js\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\js\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\js\\demo\\chart-pie-demo.html",
+      "PackagePath": "staticwebassets\\js\\demo\\chart-pie-demo.html"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\js\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\js\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\js\\demo\\chart-pie-demo2.html",
+      "PackagePath": "staticwebassets\\js\\demo\\chart-pie-demo2.html"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\js\\demo\\chart-pie-demo2.js",
+      "PackagePath": "staticwebassets\\js\\demo\\chart-pie-demo2.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\js\\demo\\chart-pie-myCount.js",
+      "PackagePath": "staticwebassets\\js\\demo\\chart-pie-myCount.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\js\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\js\\demo\\datatables-demo.js"
+    },
+    {
       "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\js\\sb-admin-2.js",
       "PackagePath": "staticwebassets\\js\\sb-admin-2.js"
     },
@@ -225,6 +257,146 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.foundation.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.foundation.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.foundation.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.foundation.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.jqueryui.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.jqueryui.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.jqueryui.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.jqueryui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.semanticui.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.semanticui.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.semanticui.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\dataTables.semanticui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\jquery.dataTables.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\jquery.dataTables.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\datatables.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\datatables.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\datatables.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\datatables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_asc.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_asc_disabled.png",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_asc_disabled.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_both.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_desc.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_desc_disabled.png",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables-css\\images\\sort_desc_disabled.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datatables.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datatables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\datetime-moment.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\datetime-moment.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.foundation.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.foundation.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.foundation.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.jqueryui.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.jqueryui.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.jqueryui.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.jqueryui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.semanticui.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.semanticui.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\dataTables.semanticui.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\dataTables.semanticui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\datatables-1.12.4\\moment.js",
+      "PackagePath": "staticwebassets\\lib\\datatables-1.12.4\\moment.js"
+    },
+    {
       "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
@@ -273,12 +445,212 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\accordion.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\accordion.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\all.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\autocomplete.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\autocomplete.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\base.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\base.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\button.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\button.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\core.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\core.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\datepicker.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\datepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\dialog.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\dialog.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\draggable.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\draggable.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-bg_flat_0_aaaaaa_40x100.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-bg_flat_0_aaaaaa_40x100.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-bg_flat_75_ffffff_40x100.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-bg_flat_75_ffffff_40x100.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-bg_glass_55_fbf9ee_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-bg_glass_55_fbf9ee_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-bg_glass_65_ffffff_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-bg_glass_65_ffffff_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-bg_glass_75_dadada_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-bg_glass_75_dadada_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-bg_glass_75_e6e6e6_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-bg_glass_75_e6e6e6_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-bg_glass_95_fef1ec_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-bg_glass_95_fef1ec_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_222222_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_222222_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_2e83ff_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_2e83ff_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_454545_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_454545_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_777620_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_777620_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_777777_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_777777_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_888888_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_888888_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_cc0000_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_cc0000_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_cd0a0a_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_cd0a0a_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\images\\ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\images\\ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\menu.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\menu.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\progressbar.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\progressbar.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\resizable.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\resizable.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\selectable.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\selectable.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\selectmenu.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\selectmenu.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\slider.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\slider.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\sortable.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\sortable.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\spinner.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\spinner.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\tabs.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\tabs.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\theme.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\theme.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\themes.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\themes.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\css\\tooltip.css",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\css\\tooltip.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\js\\jquery-ui-1.12.1.js",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\js\\jquery-ui-1.12.1.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\lib\\jqueryui\\js\\jquery-ui-1.12.1.min.js",
+      "PackagePath": "staticwebassets\\lib\\jqueryui\\js\\jquery-ui-1.12.1.min.js"
+    },
+    {
       "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
       "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\vendor\\datatables\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\vendor\\datatables\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\vendor\\datatables\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\vendor\\datatables\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\vendor\\datatables\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\vendor\\datatables\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\vendor\\datatables\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\vendor\\datatables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\vendor\\datatables\\jquery.dataTables.min.js"
     },
     {
       "Id": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\wwwroot\\vendor\\fontawesome-free\\LICENSE.txt",

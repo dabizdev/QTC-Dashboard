@@ -2,24 +2,24 @@
 
 
 @*Loop through all the applications with organizations retreived in ViewComponents/OrganizationItemViewComponents*@
-@foreach (var item in Model)
+@foreach (var currentOrganization in Model)
 {
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
         aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-cog"></i>
             <!-- Get the name of the current organization and display-->
-            <span>@item.organization.Name</span>
+            <span>@currentOrganization.organization.Name</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <!-- Display sub window with org name applications-->
-                <h6 class="collapse-header">@item.organization.Name's applications:</h6>
+                <h6 class="collapse-header">@currentOrganization.organization.Name's applications:</h6>
                     <!-- Loop through all of the applications of the current organization -->
-                    @foreach (var currentApplication in item.applications)
+                    @foreach (var currentApplication in currentOrganization.applications)
                     {
-                        <!--Display the current application here-->
-                    <a class="collapse-item" href="/errortable">@currentApplication.ApplicationName</a>
+                        <!-- Create a link that sends user to errortable and pass in parameters org and app to the link-->
+                    <a class="collapse-item" href="/errortable?org=@currentOrganization.organization.Name&app=@currentApplication.ApplicationName">@currentApplication.ApplicationName</a>
                     }
             </div>
         </div>

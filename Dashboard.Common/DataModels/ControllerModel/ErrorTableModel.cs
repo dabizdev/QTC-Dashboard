@@ -17,6 +17,9 @@ namespace Dashboard.Common.DataModels.ControllerModel
         // create a list of errors that will be seen by the user
         public List<Errors> errors { get; set; }
 
+        // get the name of both the org and application
+        public string appName { get; set; }
+        public string orgName { get; set; }
 
     }
 }

@@ -3,6 +3,7 @@ using Dashboard.Common.DataModels.ControllerModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using System.Diagnostics;
 
 namespace QTC.Dashboard.WebApp.Controllers
 {
@@ -18,11 +19,18 @@ namespace QTC.Dashboard.WebApp.Controllers
             // save the needed headers as a list of strings
             vals.headers = neededHeaders.ToList();
 
-            // TODO: get all the errors of this specific organization for this specific application
+        }
+
+        // takes in the org and application that is sent to the page when user clicks on specific application
+        public IActionResult Index(string org, string app)
+        {
+            // pass in the values of the org name and app name to the model to send to view (displayed on page)
+            vals.orgName = org;
+            vals.appName = app;
 
             List<Errors> errors = new List<Errors>();
 
-            string query = "Select * FROM ErrorsTable"; // query that we want to execute
+            string query = "Select * FROM ErrorsTable WHERE ApplicationName = '"+app+"'"; // query that we want to execute
 
             // retreive data from sql database and save below
             SqlDataAdapter data = new SqlDataAdapter(query, connection);
@@ -58,12 +66,9 @@ namespace QTC.Dashboard.WebApp.Controllers
                 }
             }
 
+            // set the errors to send to view 
             vals.errors = errors;
 
-        }
-
-        public IActionResult Index()
-        {
             // return the values needed for the error table
             return View(vals);
         }

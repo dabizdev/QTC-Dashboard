@@ -5,7 +5,7 @@
 @model Dashboard.Common.DataModels.ControllerModel.ErrorTableModel
 @{
 	Layout = "~/Views/Shared/_Layout.cshtml";
-	ViewData["Title"] = "XX-Application X";
+	ViewData["Title"] = Model.orgName+"-"+Model.appName; // create the title on the page tab
 }
 
 <div class="container-fluid">
@@ -13,7 +13,8 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Table Example</h6>
+            <!-- Display the purple header on top of the table-->
+            <h6 class="m-0 font-weight-bold text-primary">@Model.orgName - @Model.appName</h6>
         </div>
         <div class="card-body">
             <div class="table-responsive">
