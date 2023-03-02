@@ -28,7 +28,8 @@ var assemblies = new List<Assembly>();
 
 // get the base directory with /Assemblies at the end
 //var directoryPath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "Assemblies");
-var directoryPath = "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\Assemblies\\";
+var directoryPath = Path.Combine(System.Environment.CurrentDirectory, "Assemblies");
+//var directoryPath = "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\Assemblies\\";
 // if the directory path doesn't exist create
 if (!Directory.Exists(directoryPath))
 {
