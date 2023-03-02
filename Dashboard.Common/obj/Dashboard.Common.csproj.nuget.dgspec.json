@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj": {}
+    "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj": {
+    "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj",
         "projectName": "Dashboard.Common",
-        "projectPath": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj",
-        "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\Dashboard.Common\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

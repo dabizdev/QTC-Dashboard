@@ -13,6 +13,8 @@ namespace Dashboard.Common.Interfaces
         public string Name { get; }
 
         // IErrorTypeModule is an interface that doesn't implement anything yet
-        IErrorTypeModule GetErrorTypeProcessor();
+        IGetData GetData();
+
+
     }
 }

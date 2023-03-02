@@ -10,6 +10,6 @@ namespace Dashboard.Common.Interfaces
     public interface IGetData
     {
         // interface that is just meant to return a list of errors
-        List<Errors> GetData();
+        List <Errors> GetData();
     }
 }
