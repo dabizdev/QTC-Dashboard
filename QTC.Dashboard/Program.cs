@@ -7,6 +7,7 @@ using QTC.Dashboard.WebApp.Interfaces;
 using Dashboard.Common.Interfaces;
 using Dashboard.Common.Modules;
 using System.Reflection;
+using Microsoft.AspNetCore.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +25,17 @@ builder.Services.AddScoped<ITenantFactory, TenantFactory>();
 builder.Services.AddDbContext<SqlEntities>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("rhrp")));
 
 var assemblies = new List<Assembly>();
-var directoryPath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "Assemblies");
+
+// get the base directory with /Assemblies at the end
+//var directoryPath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "Assemblies");
+var directoryPath = Path.Combine(System.Environment.CurrentDirectory, "Assemblies");
+//var directoryPath = "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\Assemblies\\";
+// if the directory path doesn't exist create
+if (!Directory.Exists(directoryPath))
+{
+    // create a folder called Assemblies inside of the BaseDirectory
+    System.IO.Directory.CreateDirectory(directoryPath);
+}
 
 var directories = Directory.GetDirectories(directoryPath);
 foreach (var directory in directories)

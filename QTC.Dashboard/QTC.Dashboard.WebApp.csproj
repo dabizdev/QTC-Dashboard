@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Qtc.Dashboard.ViewModelLayer\Qtc.Dashboard.ViewModelLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Assemblies\" />
+  </ItemGroup>
+
 </Project>
