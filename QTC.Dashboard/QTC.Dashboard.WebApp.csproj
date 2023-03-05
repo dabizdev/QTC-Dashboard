@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <Folder Include="Assemblies\" />
+    <Folder Include="Views\Dashboard\" />
   </ItemGroup>
 
 </Project>
