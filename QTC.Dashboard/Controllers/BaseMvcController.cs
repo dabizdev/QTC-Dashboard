@@ -13,6 +13,7 @@ using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Dashboard.Common.Modules;     
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection;
+using Dashboard.Common.Interfaces;
 
 namespace QTC.Dashboard.WebApp.Controllers
 {
@@ -30,7 +31,7 @@ namespace QTC.Dashboard.WebApp.Controllers
         {
             var assemblies = new List<Assembly>();
 
-            var assemblyFilePath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "Assemblies", lob,
+            var assemblyFilePath = Path.Combine(System.Environment.CurrentDirectory, "Assemblies", lob,
                 $"{_config.GetValue<string>("EngineConfiguration:ClientSettings:Module")}.{lob}.dll");
 
             if (System.IO.File.Exists(assemblyFilePath))
@@ -39,7 +40,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                 Type[] types = assembly.GetTypes();
                 foreach (Type type in types)
                 {
-                    if (type.GetInterfaces().Contains(typeof(IDashboardModule)))
+                    if (type.GetInterfaces().Contains(typeof(IGetData)))
                     {
                         IEnumerable<Attribute> attrs = type.GetCustomAttributes(typeof(DashboardModuleAttribute));
                         if (attrs.Any())
@@ -58,7 +59,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
             return assemblies;
         }
-        public IErrorTypeModule GetErrors(string lob)
+        public IGetData GetErrors(string lob)
         {
             var collection = new ServiceCollection();
             var serviceType = _config.GetValue<string>("EngineConfiguration:ClientSettings:ServiceType");
@@ -79,16 +80,16 @@ namespace QTC.Dashboard.WebApp.Controllers
 
                     collection.Scan(scan => scan
                                     .FromAssemblies(assemblies)
-                                    .AddClasses(classes => classes.AssignableTo<IErrorTypeModule>(), publicOnly: true)
+                                    .AddClasses(classes => classes.AssignableTo<IGetData>(), publicOnly: true)
                                     .AsImplementedInterfaces()
                                     .WithTransientLifetime());
 
 
-                    collection.Scan(scan => scan
-                        .FromAssemblies(assemblies)
-                        .AddClasses(classes => classes.AssignableTo<IDashboardModule>(), publicOnly: true)
-                        .AsImplementedInterfaces()
-                        .WithTransientLifetime());
+                   // collection.Scan(scan => scan
+                   //     .FromAssemblies(assemblies)
+                   //     .AddClasses(classes => classes.AssignableTo<IDashboardModule>(), publicOnly: true)
+                   //     .AsImplementedInterfaces()
+                   //     .WithTransientLifetime());
 
                     break;
                 case "SERVICE":
@@ -99,7 +100,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
             var serviceProvider = collection.BuildServiceProvider();
 
-            var errorsModule = serviceProvider.GetService<IErrorTypeModule>();
+            var errorsModule = serviceProvider.GetService<IGetData>();
 
             return errorsModule;
         }

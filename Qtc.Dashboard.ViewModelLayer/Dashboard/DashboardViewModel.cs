@@ -44,7 +44,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             //ViewEntity = new ViewEntity();
             EventAction = "list";
             //QtcHeaderImage = Utility.GetQtcHeaderImage;
-            DisplayName = "EFMH";
+            DisplayName = "Dashboard";
         }
         #endregion
 
@@ -69,7 +69,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             switch (EventAction.ToLower())
             {
                 case "list":
-                    //this.Load();
+                    this.Load();
                     break;
                 case "search":
                     //this.Search();
