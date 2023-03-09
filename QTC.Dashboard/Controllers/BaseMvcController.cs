@@ -110,9 +110,10 @@ namespace QTC.Dashboard.WebApp.Controllers
             vm.ShowSpinner = TempData["ShowSpinner"] as bool? ?? true;
             if (vm.ShowSpinner.HasValue && !vm.ShowSpinner.Value)
             {
-                vm.Messages = TempData["Messages"] as List<string> ?? new List<string>();
-                vm.Message = TempData["Message"] as string ?? String.Empty;
+                //vm.Messages = TempData["Messages"] as List<string> ?? new List<string>();
+                //vm.Message = TempData["Message"] as string ?? String.Empty;
             }
+            vm.Lob = "LOB under BaseMVCController";
         }
 
         public void GetUserPermissions(DashboardViewModel vm)
@@ -122,7 +123,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
         public void SetViewModelMessages(DashboardViewModel vm)
         {
-            if (vm.Messages != null && vm.Messages.Count > 0)
+            /*if (vm.Messages != null && vm.Messages.Count > 0)
             {
                 TempData["Messages"] = vm.Messages;
             }
@@ -130,7 +131,7 @@ namespace QTC.Dashboard.WebApp.Controllers
             if (!String.IsNullOrEmpty(vm.Message))
             {
                 TempData["Message"] = vm.Message;
-            }
+            }*/
 
         }
 

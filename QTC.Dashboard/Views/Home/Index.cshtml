@@ -1,10 +1,14 @@
-﻿@{
+﻿@model Qtc.Dashboard.ViewModelLayer.Dashboard.DashboardViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-
+    <h1>The value below is "Display" value set in Init() method from DashboardViewModel.cs file</h1>
+    <br />
+    <h2>"Display" value  = @Model.Lob</h2>
+    <br />
     <h4>To see example data table, concat "/DataTable" to url</h4>
 </div>

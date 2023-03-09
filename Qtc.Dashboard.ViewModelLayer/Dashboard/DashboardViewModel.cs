@@ -45,6 +45,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             EventAction = "list";
             //QtcHeaderImage = Utility.GetQtcHeaderImage;
             DisplayName = "Dashboard";
+            //Lob = "Another Example ";
         }
         #endregion
 
@@ -75,6 +76,8 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
                     //this.Search();
                     break;
                 default:
+                    // TODO: delete this after, just used to test
+                    this.Load();
                     break;
             }
         }

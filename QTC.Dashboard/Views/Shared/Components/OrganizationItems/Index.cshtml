@@ -1,8 +1,9 @@
-﻿@model List<Dashboard.Common.DataModels.OrgsWithApps> // gets the OrgsWithApps data model
+﻿@*@model List<Dashboard.Common.DataModels.OrgsWithApps> // gets the OrgsWithApps data model*@
+@model Qtc.Dashboard.ViewModelLayer.Dashboard.DashboardViewModel
 
 
 @*Loop through all the applications with organizations retreived in ViewComponents/OrganizationItemViewComponents*@
-@foreach (var currentOrganization in Model)
+@*@foreach (var currentOrganization in Model)
 {
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -24,4 +25,25 @@
             </div>
         </div>
     </li>
-}
+}*@
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+       aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-fw fa-cog"></i>
+        <!-- Get the name of the current organization and display-->
+        <span>@Model.Lob</span>
+    </a>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <!-- Display sub window with org name applications-->
+            <h6 class="collapse-header">@Model.Lob</h6>
+            <!-- Loop through all of the applications of the current organization -->
+            @*@foreach (var currentApplication in currentOrganization.applications)
+            {
+                <!-- Create a link that sends user to errortable and pass in parameters org and app to the link-->
+                <a class="collapse-item" href="/errortable?org=@currentOrganization.organization.Name&app=@currentApplication.ApplicationName">@currentApplication.ApplicationName</a>
+            }*@
+            <a class="collapse-item" href="test link">@Model.Lob</a>
+        </div>
+    </div>
+</li>

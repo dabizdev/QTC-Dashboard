@@ -63,5 +63,11 @@ namespace Common.DA.Library.BaseClasses
         {
         }
         #endregion
+
+        protected void Init()
+        {
+            // Initialize base class properties
+            base.Init();
+        }
     }
 }

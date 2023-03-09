@@ -1,6 +1,7 @@
 ﻿using Dashboard.Common.DataModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Qtc.Dashboard.ViewModelLayer.Dashboard;
 using System.Data;
 
 namespace QTC.Dashboard.WebApp.Views.ViewComponents
@@ -8,17 +9,17 @@ namespace QTC.Dashboard.WebApp.Views.ViewComponents
     [ViewComponent(Name = "OrganizationItems")]
     public class OrganizationItemViewComponent : ViewComponent
     {
-        private SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        //private SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         // create a list of strings that will hold all of the applications
-        private readonly List<OrgsWithApps> orgsWtihApplications = new List<OrgsWithApps>();
+        //private readonly List<OrgsWithApps> orgsWtihApplications = new List<OrgsWithApps>();
 
         // constructor that gets all the values
         public OrganizationItemViewComponent()
         {
             /*
              * call the database and pull all application names from the db
-             */
+             *//*
             string query = "Select * FROM OrganizationTable"; // query that we want to execute
 
             // retreive data from sql database and save below
@@ -104,13 +105,26 @@ namespace QTC.Dashboard.WebApp.Views.ViewComponents
                     // add the current orgs with applications to the arraylist
                     orgsWtihApplications.Add(newOrgToAdd);
                 }
-            }
+            }*/
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
+            var vm = new DashboardViewModel();
+            vm.Init();
+
+            //SetMVCCommonViewModelProperties(vm);
+
+            // this shows a spinning logo while the information is being loaded
+            if (vm.ShowSpinner.HasValue && vm.ShowSpinner.Value)
+            {
+                return View("~/Views/Shared/ShowSpinner.cshtml");
+            }
+
+            // redirect user to errortable view under "views folder"
+            return View("Index", vm);
             // returns the list of organizations with applications to the view, used in /Shared/_Layout.cshtml
-            return View("Index", orgsWtihApplications);
+            //return View("Index", orgsWtihApplications);
         }
     }
 }

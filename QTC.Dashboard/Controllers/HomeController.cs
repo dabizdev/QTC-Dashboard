@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Qtc.Dashboard.ViewModelLayer.Dashboard;
 using QTC.Dashboard.Models;
 using System.Diagnostics;
 
@@ -15,7 +16,20 @@ namespace QTC.Dashboard.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var vm = new DashboardViewModel();
+            vm.Init();
+
+            //SetMVCCommonViewModelProperties(vm);
+
+            // this shows a spinning logo while the information is being loaded
+            if (vm.ShowSpinner.HasValue && vm.ShowSpinner.Value)
+            {
+                return View("~/Views/Shared/ShowSpinner.cshtml");
+            }
+
+            // redirect user to errortable view under "views folder"
+            return View(vm);
+            //return View();
         }
 
         public IActionResult Privacy()
