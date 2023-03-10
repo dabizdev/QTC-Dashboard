@@ -31,7 +31,12 @@
        aria-expanded="true" aria-controls="collapseTwo">
         <i class="fas fa-fw fa-cog"></i>
         <!-- Get the name of the current organization and display-->
-        <span>@Model.Lob</span>
+        <!--<span>@Model.Lob</span>-->
+        @foreach (var tenantName in Model.TenantNames)
+        {
+            <span>@tenantName</span>
+        }
+        
     </a>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">

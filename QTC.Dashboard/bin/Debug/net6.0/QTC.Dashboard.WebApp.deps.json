@@ -38,7 +38,6 @@
           "Microsoft.AspNetCore.Authentication.Negotiate": "6.0.9",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.13",
           "Microsoft.EntityFrameworkCore": "7.0.2",
-          "Qtc.Dashboard.BusinessLayer": "1.0.0",
           "Qtc.Dashboard.ViewModelLayer": "1.0.0",
           "Scrutor": "4.2.0",
           "Microsoft.AspNetCore.Antiforgery": "6.0.0.0",

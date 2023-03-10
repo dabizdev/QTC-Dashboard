@@ -19,7 +19,22 @@ namespace QTC.Dashboard.WebApp.Factories
         {
             var tenantName = type == "LIBRARY" ? name : "ServiceTenant";
             var tenant = _provider.GetServices<ITenant>().SingleOrDefault(x => x.Name.EndsWith(tenantName));
+            if (tenant == null)
+            {
+                throw new Exception($"No ITenant service found with name ending with {tenantName}");
+            }
             return tenant;
+        }
+
+        public async Task<string[]> GetTenantNamesAsync()
+        {
+            // Resolve ITenant[] from the IServiceProvider
+            var tenants = _provider.GetServices<ITenant>();
+
+            // Retrieve the names of the tenants
+            var tenantNames = await Task.FromResult(tenants.Select(x => x.Name).ToArray());
+
+            return tenantNames;
         }
     }
 }

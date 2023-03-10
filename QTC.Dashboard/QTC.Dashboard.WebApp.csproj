@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Dashboard.Common\Dashboard.Common.csproj" />
-    <ProjectReference Include="..\Qtc.Dashboard.BusinessLayer\Qtc.Dashboard.BusinessLayer.csproj" />
     <ProjectReference Include="..\Qtc.Dashboard.ViewModelLayer\Qtc.Dashboard.ViewModelLayer.csproj" />
   </ItemGroup>
 

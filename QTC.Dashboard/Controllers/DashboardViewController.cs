@@ -9,50 +9,38 @@ namespace QTC.Dashboard.WebApp.Controllers
     {
         private readonly ITenantFactory _tenantFactory;
         private readonly IConfiguration _config;
-        private readonly ILogger<DashboardViewModel> _logger;
+        private readonly ILogger<DashboardViewController> _logger;
 
-        public DashboardViewController(ILogger<DashboardViewController> logger,
-                                            IConfiguration config, ITenantFactory tenantFactory)
-        : base(logger, config)
+
+        public DashboardViewController(ILogger<DashboardViewController> logger, IConfiguration config, ITenantFactory tenantFactory)
+            : base(logger, config)
         {
-            _logger = (ILogger<DashboardViewModel>?)logger;
+            _logger = logger;
             _config = config;
             _tenantFactory = tenantFactory;
         }
+
         public async Task<IActionResult> Index(string lob)
         {
             try
             {
-                //var vm = new DashboardViewModel(lob, "list");
-                // create a new instance of Dashboard View Model and instantiate with default vals in Init() method
                 var vm = new DashboardViewModel();
                 vm.Init();
-
                 SetMVCCommonViewModelProperties(vm);
 
-                // this shows a spinning logo while the information is being loaded
                 if (vm.ShowSpinner.HasValue && vm.ShowSpinner.Value)
                 {
                     return View("~/Views/Shared/ShowSpinner.cshtml");
                 }
 
-                //vm.SetTenant(_tenantFactory.CreateTenant(lob, "LIBRARY"));
-                //GetUserPermissions(vm);
+                var tenantNames = (await _tenantFactory.GetTenantNamesAsync()).ToList();
 
-                ////Don't allow access for event referrals to inclinic page
-                //if (!vm.Permissions.HasMedicalRecordsAccess)
-                //{
-                //    return View("~/Views/Shared/Unauthorized.cshtml");
-                //}
+                vm.TenantNames = tenantNames;
 
-                //vm.HandleRequest();
-
-                // redirect user to errortable view under "views folder"
                 return View("Home", vm);
             }
             catch (Exception e)
             {
-                // re-throw cause the error page to display
                 throw;
             }
         }
@@ -65,17 +53,15 @@ namespace QTC.Dashboard.WebApp.Controllers
 
             try
             {
-                //vm.SetEngineManager(_engineManager);
                 SetMVCCommonViewModelProperties(vm);
-                //vm.SetMedicalRecordsModule(GetMedicalRecordsModule(vm.Lob));
-                vm.SetTenant(_tenantFactory.CreateTenant(vm.Lob, "LIBRARY"));
-                GetUserPermissions(vm);
+                Task<string[]> tenantNames = (_tenantFactory.GetTenantNamesAsync());
 
-                //Validation for data annotations
+                vm.TenantNames = (IEnumerable<string>)tenantNames;
+
+                //await GetUserPermissionsAsync(vm);
+
                 if (!ModelState.IsValid)
                 {
-                    //return the same view in order not to lose the data from the user, but
-                    //not necessary for this page
                     foreach (var modelState in ViewData.ModelState.Values)
                     {
                         foreach (ModelError error in modelState.Errors)
@@ -85,16 +71,12 @@ namespace QTC.Dashboard.WebApp.Controllers
                     }
                 }
 
-                // Clear the model state to bind the @Html helpers to new model values
                 ModelState.Clear();
 
-                //Handle the request from the user
                 vm.HandleRequest();
 
-                //Set errors or messages
                 SetViewModelMessages(vm);
 
-                // Handle any MVC actions to take in case it needs to be redirected to a different controller
                 switch (vm.EventAction)
                 {
                     default:
@@ -104,7 +86,6 @@ namespace QTC.Dashboard.WebApp.Controllers
             }
             catch (Exception e)
             {
-                // re-throw cause the error page to display
                 ret = RedirectToAction("Index", "Home", new { lob = vm.Lob });
             }
 

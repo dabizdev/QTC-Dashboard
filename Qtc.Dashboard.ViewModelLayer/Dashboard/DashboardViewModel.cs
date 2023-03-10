@@ -7,80 +7,106 @@ using System.Text;
 using System.Threading.Tasks;
 using Dashboard.Common.Interfaces;
 using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
+using Microsoft.Extensions.DependencyInjection;
+using Dashboard.Common.DataModels;
+
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
-    public partial class DashboardViewModel: AppViewModelBase
+    public partial class DashboardViewModel : AppViewModelBase
     {
         private ITenant _tenant;
+        private readonly ITenantRequestHandler _tenantRequestHandler;
+        
+
+
         public void SetTenant(ITenant tenant)
         {
             _tenant = tenant;
         }
 
         #region Constructor
-        public DashboardViewModel() : base() => Init();
+
+        public DashboardViewModel() : base()
+        {
+            this.TenantNames = new List<string>();
+            Init();
+        }
 
         public DashboardViewModel(
+            ITenantRequestHandler tenantRequestHandler,
             string lob = "",
             string eventAction = "list") : base()
         {
-            Init();
+            _tenantRequestHandler = tenantRequestHandler;
+            TenantNames = new List<string>();
             Lob = lob;
             EventAction = eventAction;
+            Init().Wait();
         }
 
         #endregion
 
         #region Init Method
-        /// <summary>
-        /// Initialize all public/private properties
-        /// </summary>
-        protected void Init()
+
+        protected async Task Init() // make Init an asynchronous method
         {
-            // Initialize base class properties
             base.Init();
-            //SearchEntity = new SearchEntity();
-            //ViewEntity = new ViewEntity();
             EventAction = "list";
-            //QtcHeaderImage = Utility.GetQtcHeaderImage;
             DisplayName = "Dashboard";
-            //Lob = "Another Example ";
+            if (_tenantRequestHandler != null)
+            {
+                TenantNames = (await _tenantRequestHandler.GetTenantNamesAsync()).ToList(); // use await to get the results of the async method
+            }
         }
+
         #endregion
 
         #region Variables
-        //public ViewEntity ViewEntity { get; set; }
-        //public SearchEntity SearchEntity { get; set; }
-        //public AuthUserPermissions Permissions { get; set; }
-        //public List<RoleMappings> RoleMappings { get; set; }
+
         public string QtcHeaderImage { get; set; }
         public string? DisplayName { get; set; }
-        //public List<SearchResultEntity> SearchResults { get; set; } = new List<SearchResultEntity>();
+        public IEnumerable<string> TenantNames { get; set; }
 
+        
 
         #endregion
 
         #region HandleRequest Method
-        public void HandleRequest()
-        {
-            // Make sure we have a valid event command
-            EventAction = EventAction == null ? string.Empty : EventAction.ToLower();
 
-            switch (EventAction.ToLower())
+        public async void HandleRequest()
+        {
+            try
             {
-                case "list":
-                    this.Load();
-                    break;
-                case "search":
-                    //this.Search();
-                    break;
-                default:
-                    // TODO: delete this after, just used to test
-                    this.Load();
-                    break;
+                EventAction = EventAction == null ? string.Empty : EventAction.ToLower();
+
+                switch (EventAction.ToLower())
+                {
+                    case "list":
+                        this.Load();
+                        break;
+                    case "search":
+                        //this.Search();
+                        break;
+                    case "GetTenantNamesAsync":
+                        // Do nothing since tenant names were already passed in constructor
+                        break;
+                    default:
+                        this.Load();
+                        break;
+                }
+            }
+            catch (Exception e)
+            {
+                throw;
             }
         }
+
+        #endregion
+
+        #region GetTenantNames
+
+        // This method is not needed since tenant names are passed in constructor
 
         #endregion
     }
