@@ -22,7 +22,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         public DashboardViewModel() : base() => Init();
 
         public DashboardViewModel(
-            string lob = "",
+            string lob = "rhrp",
             string eventAction = "list") : base()
         {
             Init();

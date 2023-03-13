@@ -20,7 +20,8 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             //ViewEntity.Organization = organizationDocumentsManager.GetOrganizationByLob(this.Lob);
 
             // this was the line that was uncommented
-            //var data = _tenant.GetData();
+            var data = _tenant.GetData();
+
 
             //if (ViewEntity.Organization != null)
             //{

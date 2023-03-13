@@ -15,7 +15,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                                             IConfiguration config, ITenantFactory tenantFactory)
         : base(logger, config)
         {
-            _logger = (ILogger<DashboardViewModel>?)logger;
+            //_logger = logger;
             _config = config;
             _tenantFactory = tenantFactory;
         }
