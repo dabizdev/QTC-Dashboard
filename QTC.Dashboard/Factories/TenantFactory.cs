@@ -15,10 +15,10 @@ namespace QTC.Dashboard.WebApp.Factories
         }
 
 
-        public ITenant CreateTenant(string name, string type)
+        public IGetData CreateTenant(string name, string type)
         {
             var tenantName = type == "LIBRARY" ? name : "ServiceTenant";
-            var tenant = _provider.GetServices<ITenant>().SingleOrDefault(x => x.Name.EndsWith(tenantName));
+            var tenant = _provider.GetServices<IGetData>().SingleOrDefault(x => x.Name.EndsWith(tenantName));
             return tenant;
         }
     }

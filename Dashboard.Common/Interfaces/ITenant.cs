@@ -9,14 +9,9 @@ namespace Dashboard.Common.Interfaces
 {
     public interface ITenant
     {
-        // a tenant name can only be retreived 
         public string Name { get; }
 
-        // IErrorTypeModule is an interface that doesn't implement anything yet
-        IGetData GetData();
-
         IErrorTypeModule GetErrorTypeProcessor();
-
 
     }
 }
