@@ -32,7 +32,8 @@ namespace Qtc.Dashboard.BusinessLayer
         {
             if (!optionsBuilder.IsConfigured)
             {
-                string connectionString = @"Data Source=Devsql01\sqldev;initial catalog=Efmh;integrated security=True;MultipleActiveResultSets=True;TrustServerCertificate=False;";
+                // TODO: remove the password
+                string connectionString = @"Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 optionsBuilder.UseSqlServer(connectionString);
             }

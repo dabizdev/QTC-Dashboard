@@ -23,7 +23,7 @@ namespace QTC.Dashboard.WebApp.Controllers
         {
             try
             {
-                //var vm = new DashboardViewModel(lob, "list");
+                var vm = new DashboardViewModel(lob, "list");
                 // create a new instance of Dashboard View Model and instantiate with default vals in Init() method
                 var vm = new DashboardViewModel();
                 vm.Init();
@@ -36,7 +36,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                     return View("~/Views/Shared/ShowSpinner.cshtml");
                 }
 
-                //vm.SetTenant(_tenantFactory.CreateTenant(lob, "LIBRARY"));
+                vm.SetTenant(_tenantFactory.CreateTenant(lob, "LIBRARY"));
                 //GetUserPermissions(vm);
 
                 ////Don't allow access for event referrals to inclinic page
@@ -48,7 +48,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                 //vm.HandleRequest();
 
                 // redirect user to errortable view under "views folder"
-                return View("Home", vm);
+                return View("DashboardView", vm);
             }
             catch (Exception e)
             {

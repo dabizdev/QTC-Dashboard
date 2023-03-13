@@ -27,6 +27,56 @@ namespace QTC.Dashboard.WebApp.Controllers
             _config = config;
         }
 
+        // get all assemblies that start with "Dashboard" and end with ".dll"
+        public List<Assembly> GetAllAssemblies()
+        {
+            // assemblies to return to any method
+            var assemblies = new List<Assembly>();
+
+            var directoryPath = Path.Combine(System.Environment.CurrentDirectory, "Assemblies");
+            //var directoryPath = "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\Assemblies\\";
+            // if the directory path doesn't exist create
+            if (!Directory.Exists(directoryPath))
+            {
+                // create a folder called Assemblies inside of the BaseDirectory
+                System.IO.Directory.CreateDirectory(directoryPath);
+            }
+
+            var directories = Directory.GetDirectories(directoryPath);
+            foreach (var directory in directories)
+            {
+                foreach (string assemblyPath in Directory.GetFiles(directory, "*.dll", SearchOption.AllDirectories))
+                {
+                    var fileNameWithoutExtension = Path.GetFileNameWithoutExtension(assemblyPath) ?? String.Empty;
+                    if (fileNameWithoutExtension.StartsWith("Dashboard"))
+                    {
+                        var assembly = Assembly.LoadFrom(assemblyPath);
+
+                        Type[] types = assembly.GetTypes();
+                        foreach (Type type in types)
+                        {
+                            if (type.GetInterfaces().Contains(typeof(ITenant)))
+                            {
+                                IEnumerable<Attribute> attrs = type.GetCustomAttributes(typeof(DashboardModuleAttribute));
+                                if (attrs.Any())
+                                {
+                                    //DashboardModuleAttribute moduleAttr = attrs.ToArray()[0] as DashboardModuleAttribute;
+                                    assemblies.Add(assembly);
+                                    //Console.WriteLine("Initializing module '{0}'.", moduleAttr?.Name);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return assemblies;
+        }
+        
+
+        /*
+         * Everything below was already added before
+         */
         public List<Assembly> GetAssemblies(string lob)
         {
             var assemblies = new List<Assembly>();
@@ -112,8 +162,9 @@ namespace QTC.Dashboard.WebApp.Controllers
             {
                 //vm.Messages = TempData["Messages"] as List<string> ?? new List<string>();
                 //vm.Message = TempData["Message"] as string ?? String.Empty;
+                vm.DisplayName = "finished loading under baseMVCController.cs";
             }
-            vm.Lob = "LOB under BaseMVCController";
+            //vm.Lob = "LOB under BaseMVCController";
         }
 
         public void GetUserPermissions(DashboardViewModel vm)
