@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dashboard.Common.Interfaces;
 using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
+using Qtc.Dashboard.BusinessLayer.EntityClasses;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
@@ -50,7 +51,8 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         #endregion
 
         #region Variables
-        //public ViewEntity ViewEntity { get; set; }
+        public ViewEntity ViewEntity { get; set; } = new ViewEntity();
+
         //public SearchEntity SearchEntity { get; set; }
         //public AuthUserPermissions Permissions { get; set; }
         //public List<RoleMappings> RoleMappings { get; set; }
@@ -83,5 +85,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         }
 
         #endregion
+
+
     }
 }

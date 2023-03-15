@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Dashboard.Common.Interfaces;
 using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
+using Qtc.Dashboard.BusinessLayer.ManagerClasses;
+using Qtc.Dashboard.BusinessLayer.EntityClasses;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
@@ -14,14 +16,37 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
     {
         public bool Load()
         {
-            //OrganizationDocumentsManager organizationDocumentsManager = new
-            //    OrganizationDocumentsManager();
+            OrganizationErrorsManager organizationErrorsManager = new
+                OrganizationErrorsManager();
 
-            //ViewEntity.Organization = organizationDocumentsManager.GetOrganizationByLob(this.Lob);
+            //ViewEntity = new ViewEntity();
 
-            // this was the line that was uncommented
-            var data = _tenant.GetData("rhrp");
 
+            ViewEntity.Organization = organizationErrorsManager.GetOrganizationByLob(this.Lob);
+            ViewEntity.Integrations = organizationErrorsManager.GetOrganizationIntegrationsByOrganizationId(ViewEntity.Organization.OrganizationId);
+
+            // this was the original line that was uncommented
+            //var data = _tenant.GetData("SQL");
+
+            // loop through each integration point (stored in the Name column of the OrganizationIntegrations table), 
+            // and use the _tenant.GetData() method to retrieve data for each integration point
+
+            foreach (var integration in ViewEntity.Integrations)
+            {
+                //string integrationName = integration.Name;
+
+                var data = _tenant.GetData(integration.Name);
+                // Do something with the data
+            }
+
+
+            //for (int i = 0; i < ViewEntity.Organization.OrganizationIntegrations.Count; i++)
+            //{
+            //var organizationIntegration = ViewEntity.Organization.OrganizationIntegrations[i];
+            //ViewEntity.Organization.OrganizationDocuments[i] = (x => x.OrganizationDocumentId == organizationDocument.OrganizationDocumentId).ToList();
+
+            //   }
+            //}
 
             //if (ViewEntity.Organization != null)
             //{

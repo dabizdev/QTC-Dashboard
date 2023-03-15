@@ -22,3 +22,5 @@ C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Librar
 C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\refint\Common.DA.Library.dll
 C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.pdb
 C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\ref\Common.DA.Library.dll
+C:\Users\Admin\Documents\QTC\Common.DA.Library\bin\Debug\net6.0\Common.DA.Library.runtimeconfig.json
+C:\Users\Admin\Documents\QTC\Common.DA.Library\obj\Debug\net6.0\Common.DA.Library.genruntimeconfig.cache
