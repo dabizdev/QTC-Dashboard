@@ -23,7 +23,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         public DashboardViewModel() : base() => Init();
 
         public DashboardViewModel(
-            string lob = "rhrp",
+            string lob = "RHRP",
             string eventAction = "list") : base()
         {
             Init();
@@ -51,7 +51,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         #endregion
 
         #region Variables
-        public ViewEntity ViewEntity { get; set; } = new ViewEntity();
+        public ViewEntity ViewEntity { get; set; }
 
         //public SearchEntity SearchEntity { get; set; }
         //public AuthUserPermissions Permissions { get; set; }

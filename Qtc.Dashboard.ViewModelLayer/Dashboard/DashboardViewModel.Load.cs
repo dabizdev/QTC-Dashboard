@@ -19,10 +19,10 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             OrganizationErrorsManager organizationErrorsManager = new
                 OrganizationErrorsManager();
 
-            ViewEntity = new ViewEntity();
+            //ViewEntity = new ViewEntity();
 
 
-            ViewEntity.Organization = organizationErrorsManager.GetOrganizationByLob(this.Lob);
+            ViewEntity.Organization = organizationErrorsManager.GetOrganizationByLob("RHRP");
             Console.WriteLine(ViewEntity.Organization);
             ViewEntity.Integrations = organizationErrorsManager.GetOrganizationIntegrationsByOrganizationId(ViewEntity.Organization.OrganizationId);
 
@@ -37,9 +37,9 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 
             foreach (var integration in ViewEntity.Integrations)
             {
-                //string integrationName = integration.Name;
+                string integrationName = integration.Name;
 
-                var data = _tenant.GetData(integration.Name);
+                var data = _tenant.GetData(integrationName);
                 // Do something with the data
                 Console.WriteLine(data);
             }

@@ -26,7 +26,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                 var vm = new DashboardViewModel(lob, "list");
                 // create a new instance of Dashboard View Model and instantiate with default vals in Init() method
                 //var vm = new DashboardViewModel();
-                //vm.Init();
+                vm.Init();
 
                 SetMVCCommonViewModelProperties(vm);
 
