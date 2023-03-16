@@ -4,8 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dashboard.Common.DataModels;
+//using Dashboard.Common.DataModels;
 using Microsoft.EntityFrameworkCore;
+using Qtc.Dashboard.BusinessLayer.EntityClasses;
 
 namespace Qtc.Dashboard.BusinessLayer
 {
@@ -20,9 +21,9 @@ namespace Qtc.Dashboard.BusinessLayer
 
         }
 
-        public virtual DbSet<Errors> Errors { get; set; }
-        //public virtual DbSet<OrganizationDocument> OrganizationDocument { get; set; }
-        //public virtual DbSet<Component> Component { get; set; }
+        //public virtual DbSet<Errors> Errors { get; set; }
+        public virtual DbSet<Organization> Organization { get; set; }
+        public virtual DbSet<OrganizationIntegration> Integrations { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -32,7 +33,7 @@ namespace Qtc.Dashboard.BusinessLayer
         {
             if (!optionsBuilder.IsConfigured)
             {
-                string connectionString = @"Data Source=Devsql01\sqldev;initial catalog=Efmh;integrated security=True;MultipleActiveResultSets=True;TrustServerCertificate=False;";
+                string connectionString = @"Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 optionsBuilder.UseSqlServer(connectionString);
             }

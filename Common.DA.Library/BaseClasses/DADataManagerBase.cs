@@ -268,9 +268,9 @@ namespace Common.DA.Library.BaseClasses
             };
 
             // Set the last exception
-            LastException = exc;
+           LastException = exc;
 
-            throw exc;
+           throw exc;
         }
         #endregion
 

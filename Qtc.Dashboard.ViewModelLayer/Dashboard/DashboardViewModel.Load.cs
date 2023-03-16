@@ -19,14 +19,18 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             OrganizationErrorsManager organizationErrorsManager = new
                 OrganizationErrorsManager();
 
-            //ViewEntity = new ViewEntity();
+            ViewEntity = new ViewEntity();
 
 
             ViewEntity.Organization = organizationErrorsManager.GetOrganizationByLob(this.Lob);
+            Console.WriteLine(ViewEntity.Organization);
             ViewEntity.Integrations = organizationErrorsManager.GetOrganizationIntegrationsByOrganizationId(ViewEntity.Organization.OrganizationId);
 
             // this was the original line that was uncommented
             //var data = _tenant.GetData("SQL");
+
+            Console.WriteLine(ViewEntity.Organization);
+            Console.WriteLine(ViewEntity.Integrations);
 
             // loop through each integration point (stored in the Name column of the OrganizationIntegrations table), 
             // and use the _tenant.GetData() method to retrieve data for each integration point
@@ -37,6 +41,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 
                 var data = _tenant.GetData(integration.Name);
                 // Do something with the data
+                Console.WriteLine(data);
             }
 
 

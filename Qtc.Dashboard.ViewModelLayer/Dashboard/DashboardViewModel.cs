@@ -42,7 +42,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             // Initialize base class properties
             base.Init();
             //SearchEntity = new SearchEntity();
-            //ViewEntity = new ViewEntity();
+            ViewEntity = new ViewEntity();
             EventAction = "list";
             //QtcHeaderImage = Utility.GetQtcHeaderImage;
             DisplayName = "Dashboard";
