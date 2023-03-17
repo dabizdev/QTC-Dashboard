@@ -85,11 +85,11 @@ namespace QTC.Dashboard.WebApp.Controllers
                                     .WithTransientLifetime());
 
 
-                   // collection.Scan(scan => scan
-                   //     .FromAssemblies(assemblies)
-                   //     .AddClasses(classes => classes.AssignableTo<IDashboardModule>(), publicOnly: true)
-                   //     .AsImplementedInterfaces()
-                   //     .WithTransientLifetime());
+                    //collection.Scan(scan => scan
+                    //    .FromAssemblies(assemblies)
+                    //    .AddClasses(classes => classes.AssignableTo<IErrorTypeModule>(), publicOnly: true)
+                    //    .AsImplementedInterfaces()
+                    //    .WithTransientLifetime());
 
                     break;
                 case "SERVICE":

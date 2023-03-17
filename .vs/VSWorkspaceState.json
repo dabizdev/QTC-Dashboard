@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Common.DA.Library",
+    "\\Dashboard.Common",
+    "\\QTC.Dashboard",
+    "\\Qtc.Dashboard.ViewModelLayer",
+    "\\Qtc.Dashboard.ViewModelLayer\\Dashboard"
+  ],
+  "SelectedNode": "\\Qtc.Dashboard.ViewModelLayer\\Dashboard\\DashboardViewModel.Load.cs",
+  "PreviewInSolutionExplorer": false
+}

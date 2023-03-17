@@ -78,6 +78,12 @@ builder.Services.Scan(scan => scan
     .AsImplementedInterfaces()
     .WithScopedLifetime());
 
+//builder.Services.Scan(scan => scan
+//    .FromAssemblies(assemblies)
+//    .AddClasses(classes => classes.AssignableTo<IGetData>(), publicOnly: true)
+//    .AsImplementedInterfaces()
+//    .WithScopedLifetime());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

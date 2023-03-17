@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj": {}
+    "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj": {
+    "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj",
+        "projectUniqueName": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj",
         "projectName": "Common.DA.Library",
-        "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\obj\\",
+        "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj",
+        "packagesPath": "C:\\Users\\jeddins\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeddins\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

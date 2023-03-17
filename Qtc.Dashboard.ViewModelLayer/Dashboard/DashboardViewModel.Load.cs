@@ -9,6 +9,7 @@ using Dashboard.Common.Interfaces;
 using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Qtc.Dashboard.BusinessLayer.ManagerClasses;
 using Qtc.Dashboard.BusinessLayer.EntityClasses;
+using System.Reflection;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
@@ -38,10 +39,16 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             foreach (var integration in ViewEntity.Integrations)
             {
                 string integrationName = integration.Name;
+                var directoryPath = "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\QTC.Dashboard\\Plugins\\RHRP\\Dashboard.Modules.RHRP.dll";
+                var assembly = Assembly.LoadFile(directoryPath);
+                var type = assembly.GetType("Dashboard.Modules.RHRP.ErrorTypeModule");
 
-                var data = _tenant.GetData(integrationName);
+                var obj = Activator.CreateInstance(type);
+                var method = type.GetMethod("GetData");
+                var result = method.Invoke(obj, new object[] { "SQL" } );
+                //var data = _tenant.GetData(integrationName);
                 // Do something with the data
-                Console.WriteLine(data);
+                //Console.WriteLine(data);
             }
 
 

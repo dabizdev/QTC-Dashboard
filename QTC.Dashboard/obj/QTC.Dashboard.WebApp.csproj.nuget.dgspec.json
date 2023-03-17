@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj": {}
+    "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj": {
+    "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj",
+        "projectUniqueName": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj",
         "projectName": "Common.DA.Library",
-        "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\obj\\",
+        "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj",
+        "packagesPath": "C:\\Users\\jeddins\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeddins\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,21 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj": {
+    "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj",
+        "projectUniqueName": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj",
         "projectName": "Dashboard.Common",
-        "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\obj\\",
+        "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj",
+        "packagesPath": "C:\\Users\\jeddins\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeddins\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -136,21 +136,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
+    "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj",
         "projectName": "Qtc.Dashboard.BusinessLayer",
-        "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\jeddins\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeddins\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,11 +164,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj"
+              "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj": {
+                "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj"
               },
-              "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj"
+              "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj": {
+                "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj"
               }
             }
           }
@@ -212,21 +212,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj": {
+    "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj",
         "projectName": "Qtc.Dashboard.ViewModelLayer",
-        "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\obj\\",
+        "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj",
+        "packagesPath": "C:\\Users\\jeddins\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeddins\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -240,11 +240,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj"
+              "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj": {
+                "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj"
               },
-              "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj"
+              "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj"
               }
             }
           }
@@ -280,21 +280,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj": {
+    "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj",
         "projectName": "QTC.Dashboard.WebApp",
-        "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\obj\\",
+        "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj",
+        "packagesPath": "C:\\Users\\jeddins\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\QTC.Dashboard\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeddins\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -308,14 +308,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj"
+              "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj": {
+                "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj"
               },
-              "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj"
+              "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj"
               },
-              "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj"
+              "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj": {
+                "projectPath": "C:\\Users\\jeddins\\Desktop\\QTC-Dashboard\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj"
               }
             }
           }
@@ -366,7 +366,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
