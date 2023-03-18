@@ -3,7 +3,6 @@ using Dashboard.Common.DataModels.ControllerModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using System.Data;
-using System.Diagnostics;
 
 namespace QTC.Dashboard.WebApp.Controllers
 {
@@ -12,10 +11,11 @@ namespace QTC.Dashboard.WebApp.Controllers
         public ErrorTableModel vals = new ErrorTableModel();
         private SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
-        public ErrorTableController() {
+        public ErrorTableController()
+        {
             // create an array of strings with the headers needed
             string[] neededHeaders = new string[] { "Application Name", "Layer", "Module", "Alert", "AlertTeam", "Severity", "ServerName", "ErrorCode", "Error Message", "Error Date", "User", "View" };
-            
+
             // save the needed headers as a list of strings
             vals.headers = neededHeaders.ToList();
 
@@ -30,7 +30,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
             List<Errors> errors = new List<Errors>();
 
-            string query = "Select * FROM ErrorsTable WHERE ApplicationName = '"+app+"'"; // query that we want to execute
+            string query = "Select * FROM ErrorsTable WHERE ApplicationName = '" + app + "'"; // query that we want to execute
 
             // retreive data from sql database and save below
             SqlDataAdapter data = new SqlDataAdapter(query, connection);

@@ -1,23 +1,26 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.AspNetCore.Mvc;
-using QTC.Dashboard.WebApp.Interfaces;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Qtc.Dashboard.ViewModelLayer.Dashboard;
+using QTC.Dashboard.WebApp.Interfaces;
+using System.Reflection.Metadata;
 
 namespace QTC.Dashboard.WebApp.Controllers
 {
     public class DashboardViewController : BaseMvcController
     {
         private readonly ITenantFactory _tenantFactory;
+        private readonly IGetDataFactory _getDataFactory;
         private readonly IConfiguration _config;
         private readonly ILogger<DashboardViewModel> _logger;
 
         public DashboardViewController(ILogger<DashboardViewController> logger,
-                                            IConfiguration config, ITenantFactory tenantFactory)
+                                            IConfiguration config, ITenantFactory tenantFactory, IGetDataFactory getDataFactory)
         : base(logger, config)
         {
             //_logger = logger;
             _config = config;
             _tenantFactory = tenantFactory;
+            _getDataFactory = getDataFactory;
         }
         public async Task<IActionResult> Index(string lob)
         {
@@ -36,7 +39,8 @@ namespace QTC.Dashboard.WebApp.Controllers
                     return View("~/Views/Shared/ShowSpinner.cshtml");
                 }
 
-                vm.SetTenant(_tenantFactory.CreateTenant(lob, "LIBRARY"));
+                //vm.SetTenant(_tenantFactory.CreateTenant(lob, "LIBRARY"));
+                vm.SetGetData(_getDataFactory.CreateGetData(lob, "LIBRARY"));
                 //GetUserPermissions(vm);
 
                 ////Don't allow access for event referrals to inclinic page
@@ -68,7 +72,9 @@ namespace QTC.Dashboard.WebApp.Controllers
                 //vm.SetEngineManager(_engineManager);
                 SetMVCCommonViewModelProperties(vm);
                 //vm.SetMedicalRecordsModule(GetMedicalRecordsModule(vm.Lob));
+
                 vm.SetTenant(_tenantFactory.CreateTenant(vm.Lob, "LIBRARY"));
+                vm.SetGetData(_getDataFactory.CreateGetData(vm.Lob, "LIBRARY"));
                 GetUserPermissions(vm);
 
                 //Validation for data annotations

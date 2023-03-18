@@ -1,5 +1,4 @@
-﻿using Common.DA.Library;
-using Common.DA.Library.BaseClasses;
+﻿using Common.DA.Library.BaseClasses;
 
 namespace Qtc.Dashboard.BusinessLayer.AppBaseClasses
 {

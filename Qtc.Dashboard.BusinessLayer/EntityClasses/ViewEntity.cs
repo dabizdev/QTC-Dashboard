@@ -1,11 +1,4 @@
-﻿using Dashboard.Common.DataModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Qtc.Dashboard.BusinessLayer.EntityClasses
+﻿namespace Qtc.Dashboard.BusinessLayer.EntityClasses
 {
     public class ViewEntity
     {

@@ -1,18 +1,10 @@
-﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using Dashboard.Common.Interfaces;
-using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
-using Qtc.Dashboard.BusinessLayer.ManagerClasses;
+﻿using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Qtc.Dashboard.BusinessLayer.EntityClasses;
+using Qtc.Dashboard.BusinessLayer.ManagerClasses;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
-    public partial class DashboardViewModel: AppViewModelBase
+    public partial class DashboardViewModel : AppViewModelBase
     {
         public bool Load()
         {
@@ -39,7 +31,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             {
                 string integrationName = integration.Name;
 
-                var data = _tenant.GetData(integrationName);
+                var data = _getData.GetData(integrationName);
                 // Do something with the data
                 Console.WriteLine(data);
             }

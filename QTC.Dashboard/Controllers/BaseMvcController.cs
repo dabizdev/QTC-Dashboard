@@ -8,12 +8,11 @@
 //using Qtc.Efm.WebApp.Common;
 //using System.Reflection;
 
-using Qtc.Dashboard.ViewModelLayer.Dashboard;
-using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
-using Dashboard.Common.Modules;     
-using Microsoft.AspNetCore.Mvc;
-using System.Reflection;
 using Dashboard.Common.Interfaces;
+using Dashboard.Common.Modules;
+using Microsoft.AspNetCore.Mvc;
+using Qtc.Dashboard.ViewModelLayer.Dashboard;
+using System.Reflection;
 
 namespace QTC.Dashboard.WebApp.Controllers
 {
@@ -85,11 +84,11 @@ namespace QTC.Dashboard.WebApp.Controllers
                                     .WithTransientLifetime());
 
 
-                   // collection.Scan(scan => scan
-                   //     .FromAssemblies(assemblies)
-                   //     .AddClasses(classes => classes.AssignableTo<IDashboardModule>(), publicOnly: true)
-                   //     .AsImplementedInterfaces()
-                   //     .WithTransientLifetime());
+                    collection.Scan(scan => scan
+                         .FromAssemblies(assemblies)
+                         .AddClasses(classes => classes.AssignableTo<ITenant>(), publicOnly: true)
+                         .AsImplementedInterfaces()
+                         .WithTransientLifetime());
 
                     break;
                 case "SERVICE":

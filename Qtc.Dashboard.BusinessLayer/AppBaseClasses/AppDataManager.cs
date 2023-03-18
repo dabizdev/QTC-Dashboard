@@ -1,16 +1,11 @@
 ﻿using Common.DA.Library.BaseClasses;
-using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Storage;
 using System.Data.Common;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Qtc.Dashboard.BusinessLayer.AppBaseClasses
 {
-    public class AppDataManager : DADataManagerBase    
+    public class AppDataManager : DADataManagerBase
     {
         public SqlEntities sqlEntity;
         public IDbContextTransaction trans;

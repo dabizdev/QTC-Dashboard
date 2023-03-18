@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Data.Common;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Common.DA.Library.Exceptions;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using System.Data.SqlClient;
-using Common.DA.Library.Exceptions;
+using System.ComponentModel.DataAnnotations;
+using System.Data;
+using System.Data.Common;
 
 namespace Common.DA.Library.BaseClasses
 {
@@ -268,9 +262,9 @@ namespace Common.DA.Library.BaseClasses
             };
 
             // Set the last exception
-           LastException = exc;
+            LastException = exc;
 
-           throw exc;
+            throw exc;
         }
         #endregion
 

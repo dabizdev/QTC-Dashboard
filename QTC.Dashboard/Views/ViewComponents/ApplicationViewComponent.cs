@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Dashboard.Common.DataModels; // gets the Application Model to format list of applications
+﻿using Dashboard.Common.DataModels; // gets the Application Model to format list of applications
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using System.Data;
 
@@ -10,14 +10,14 @@ using System.Data;
 namespace QTC.Dashboard.WebApp.Views.ViewComponents
 {
     [ViewComponent(Name = "Applications")]
-    public class ApplicationViewComponent:ViewComponent
+    public class ApplicationViewComponent : ViewComponent
     {
         //private readonly ApplicationDbContext _context;
         private SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         // create a list of strings that will hold all of the applications
         private readonly List<Application> applications = new List<Application>();
-        public ApplicationViewComponent( )
+        public ApplicationViewComponent()
         {
             /*
              * call the database and pull all application names from the db

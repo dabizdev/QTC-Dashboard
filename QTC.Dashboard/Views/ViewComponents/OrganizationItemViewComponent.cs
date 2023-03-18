@@ -1,8 +1,5 @@
-﻿using Dashboard.Common.DataModels;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.AspNetCore.Mvc;
 using Qtc.Dashboard.ViewModelLayer.Dashboard;
-using System.Data;
 
 namespace QTC.Dashboard.WebApp.Views.ViewComponents
 {

@@ -1,11 +1,4 @@
-﻿using Dashboard.Common.Delegates;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Dashboard.Common.Events
+﻿namespace Dashboard.Common.Events
 {
     public class DashboardEvents
     {

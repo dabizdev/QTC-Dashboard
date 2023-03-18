@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-/*
+﻿/*
  * This class is meant to represent a component that is on the sidebar of the dashboard
  */
 namespace Dashboard.Common.DataModels

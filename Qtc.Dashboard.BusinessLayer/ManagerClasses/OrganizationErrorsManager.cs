@@ -1,11 +1,5 @@
 ﻿using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Qtc.Dashboard.BusinessLayer.EntityClasses;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Qtc.Dashboard.BusinessLayer.ManagerClasses
 {
@@ -57,6 +51,6 @@ namespace Qtc.Dashboard.BusinessLayer.ManagerClasses
             return Integrations;
         }
 
-       
+
     }
 }

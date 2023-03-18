@@ -1,22 +1,21 @@
-﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using Dashboard.Common.Interfaces;
+﻿using Dashboard.Common.Interfaces;
 using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Qtc.Dashboard.BusinessLayer.EntityClasses;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
-    public partial class DashboardViewModel: AppViewModelBase
+    public partial class DashboardViewModel : AppViewModelBase
     {
-        private IGetData _tenant;
-        public void SetTenant(IGetData tenant)
+        private ITenant _tenant;
+        private IGetData _getData;
+        public void SetTenant(ITenant tenant)
         {
             _tenant = tenant;
+        }
+
+        public void SetGetData(IGetData getData)
+        {
+            _getData = getData;
         }
 
         #region Constructor
