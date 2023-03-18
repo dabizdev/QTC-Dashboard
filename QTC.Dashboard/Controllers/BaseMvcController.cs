@@ -59,7 +59,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
             return assemblies;
         }
-        public IGetData GetErrors(string lob)
+        public IErrorTypeModule GetData(string lob)
         {
             var collection = new ServiceCollection();
             var serviceType = _config.GetValue<string>("EngineConfiguration:ClientSettings:ServiceType");
@@ -80,7 +80,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
                     collection.Scan(scan => scan
                                     .FromAssemblies(assemblies)
-                                    .AddClasses(classes => classes.AssignableTo<IGetData>(), publicOnly: true)
+                                    .AddClasses(classes => classes.AssignableTo<IErrorTypeModule>(), publicOnly: true)
                                     .AsImplementedInterfaces()
                                     .WithTransientLifetime());
 
@@ -100,7 +100,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
             var serviceProvider = collection.BuildServiceProvider();
 
-            var errorsModule = serviceProvider.GetService<IGetData>();
+            var errorsModule = serviceProvider.GetService<IErrorTypeModule>();
 
             return errorsModule;
         }
@@ -113,7 +113,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                 //vm.Messages = TempData["Messages"] as List<string> ?? new List<string>();
                 //vm.Message = TempData["Message"] as string ?? String.Empty;
             }
-            vm.Lob = "LOB under BaseMVCController";
+            //vm.Lob = "LOB under BaseMVCController";
         }
 
         public void GetUserPermissions(DashboardViewModel vm)

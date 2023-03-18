@@ -13,8 +13,8 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
     public partial class DashboardViewModel: AppViewModelBase
     {
-        private IGetData _tenant;
-        public void SetTenant(IGetData tenant)
+        private ITenant _tenant;
+        public void SetTenant(ITenant tenant)
         {
             _tenant = tenant;
         }

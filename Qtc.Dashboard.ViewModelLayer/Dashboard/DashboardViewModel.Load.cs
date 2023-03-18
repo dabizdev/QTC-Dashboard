@@ -22,7 +22,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             //ViewEntity = new ViewEntity();
 
 
-            ViewEntity.Organization = organizationErrorsManager.GetOrganizationByLob("RHRP");
+            ViewEntity.Organization = organizationErrorsManager.GetOrganizationByLob(this.Lob);
             Console.WriteLine(ViewEntity.Organization);
             ViewEntity.Integrations = organizationErrorsManager.GetOrganizationIntegrationsByOrganizationId(ViewEntity.Organization.OrganizationId);
 
@@ -39,7 +39,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             {
                 string integrationName = integration.Name;
 
-                var data = _tenant.GetData(integrationName);
+                var data = _tenant.GetErrorTypeProcessor();
                 // Do something with the data
                 Console.WriteLine(data);
             }
