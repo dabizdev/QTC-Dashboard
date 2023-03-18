@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Qtc.Dashboard.ViewModelLayer.Dashboard;
+using QTC.Dashboard.WebApp.Factories;
 using QTC.Dashboard.WebApp.Interfaces;
 using System.Reflection.Metadata;
 
@@ -9,18 +10,18 @@ namespace QTC.Dashboard.WebApp.Controllers
     public class DashboardViewController : BaseMvcController
     {
         private readonly ITenantFactory _tenantFactory;
-        private readonly IGetDataFactory _getDataFactory;
+        private readonly IErrorTypeModuleFactory _errorTypeModuleFactory;
         private readonly IConfiguration _config;
         private readonly ILogger<DashboardViewModel> _logger;
 
         public DashboardViewController(ILogger<DashboardViewController> logger,
-                                            IConfiguration config, ITenantFactory tenantFactory, IGetDataFactory getDataFactory)
+                                            IConfiguration config, ITenantFactory tenantFactory, IErrorTypeModuleFactory errorTypeModuleFactory)
         : base(logger, config)
         {
             //_logger = logger;
             _config = config;
             _tenantFactory = tenantFactory;
-            _getDataFactory = getDataFactory;
+            _errorTypeModuleFactory = errorTypeModuleFactory;
         }
         public async Task<IActionResult> Index(string lob)
         {
@@ -38,9 +39,12 @@ namespace QTC.Dashboard.WebApp.Controllers
                 {
                     return View("~/Views/Shared/ShowSpinner.cshtml");
                 }
-
-                //vm.SetTenant(_tenantFactory.CreateTenant(lob, "LIBRARY"));
-                vm.SetGetData(_getDataFactory.CreateGetData(lob, "LIBRARY"));
+                var data = GetErrors("RHRP");
+                Console.WriteLine("test");
+                //vm.SetErrorTypeModule(_errorTypeModuleFactory.CreateErrorTypeModule("sql"));
+                vm.SetTenant(_tenantFactory.CreateTenant(lob, "LIBRARY"));
+                
+                //vm.SetGetData(_errorTypeModuleFactory.CreateGetData(lob, "LIBRARY"));
                 //GetUserPermissions(vm);
 
                 ////Don't allow access for event referrals to inclinic page
@@ -74,7 +78,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                 //vm.SetMedicalRecordsModule(GetMedicalRecordsModule(vm.Lob));
 
                 vm.SetTenant(_tenantFactory.CreateTenant(vm.Lob, "LIBRARY"));
-                vm.SetGetData(_getDataFactory.CreateGetData(vm.Lob, "LIBRARY"));
+                //vm.SetGetData(_errorTypeModuleFactory.CreateErrorTypeModule("integration point"));
                 GetUserPermissions(vm);
 
                 //Validation for data annotations

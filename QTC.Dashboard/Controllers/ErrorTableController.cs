@@ -9,7 +9,7 @@ namespace QTC.Dashboard.WebApp.Controllers
     public class ErrorTableController : Controller
     {
         public ErrorTableModel vals = new ErrorTableModel();
-        private SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        /*private SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");*/
 
         public ErrorTableController()
         {
@@ -28,7 +28,7 @@ namespace QTC.Dashboard.WebApp.Controllers
             vals.orgName = org;
             vals.appName = app;
 
-            List<Errors> errors = new List<Errors>();
+            /*List<Errors> errors = new List<Errors>();
 
             string query = "Select * FROM ErrorsTable WHERE ApplicationName = '" + app + "'"; // query that we want to execute
 
@@ -67,7 +67,7 @@ namespace QTC.Dashboard.WebApp.Controllers
             }
 
             // set the errors to send to view 
-            vals.errors = errors;
+            vals.errors = errors;*/
 
             // return the values needed for the error table
             return View(vals);

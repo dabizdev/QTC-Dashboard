@@ -1,6 +1,7 @@
 ﻿using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Qtc.Dashboard.BusinessLayer.EntityClasses;
 using Qtc.Dashboard.BusinessLayer.ManagerClasses;
+using System.Diagnostics;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
@@ -21,8 +22,8 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             // this was the original line that was uncommented
             //var data = _tenant.GetData("SQL");
 
-            Console.WriteLine(ViewEntity.Organization);
-            Console.WriteLine(ViewEntity.Integrations);
+            Debug.WriteLine(ViewEntity.Organization);
+            Debug.WriteLine(ViewEntity.Integrations);
 
             // loop through each integration point (stored in the Name column of the OrganizationIntegrations table), 
             // and use the _tenant.GetData() method to retrieve data for each integration point
@@ -31,9 +32,12 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             {
                 string integrationName = integration.Name;
 
-                var data = _getData.GetData(integrationName);
+                
+
+                //var data = _errorTypeModule.GetData(integrationName);
+
                 // Do something with the data
-                Console.WriteLine(data);
+                //Debug.WriteLine(data);
             }
 
 

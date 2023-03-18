@@ -7,15 +7,15 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
     public partial class DashboardViewModel : AppViewModelBase
     {
         private ITenant _tenant;
-        private IGetData _getData;
+        private IErrorTypeModule _errorTypeModule;
         public void SetTenant(ITenant tenant)
         {
             _tenant = tenant;
         }
 
-        public void SetGetData(IGetData getData)
+        public void SetErrorTypeModule(IErrorTypeModule errorTypeModule)
         {
-            _getData = getData;
+            _errorTypeModule = errorTypeModule;
         }
 
         #region Constructor

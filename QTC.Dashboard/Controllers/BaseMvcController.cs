@@ -39,7 +39,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                 Type[] types = assembly.GetTypes();
                 foreach (Type type in types)
                 {
-                    if (type.GetInterfaces().Contains(typeof(IGetData)))
+                    if (type.GetInterfaces().Contains(typeof(IErrorTypeModule)))
                     {
                         IEnumerable<Attribute> attrs = type.GetCustomAttributes(typeof(DashboardModuleAttribute));
                         if (attrs.Any())
@@ -58,7 +58,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
             return assemblies;
         }
-        public IGetData GetErrors(string lob)
+        public IErrorTypeModule GetErrors(string lob)
         {
             var collection = new ServiceCollection();
             var serviceType = _config.GetValue<string>("EngineConfiguration:ClientSettings:ServiceType");
@@ -79,7 +79,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
                     collection.Scan(scan => scan
                                     .FromAssemblies(assemblies)
-                                    .AddClasses(classes => classes.AssignableTo<IGetData>(), publicOnly: true)
+                                    .AddClasses(classes => classes.AssignableTo<IErrorTypeModule>(), publicOnly: true)
                                     .AsImplementedInterfaces()
                                     .WithTransientLifetime());
 
@@ -99,7 +99,7 @@ namespace QTC.Dashboard.WebApp.Controllers
 
             var serviceProvider = collection.BuildServiceProvider();
 
-            var errorsModule = serviceProvider.GetService<IGetData>();
+            var errorsModule = serviceProvider.GetService<IErrorTypeModule>();
 
             return errorsModule;
         }

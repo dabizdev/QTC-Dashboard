@@ -18,7 +18,7 @@ var engineConfiguration = configuration.GetSection("EngineConfiguration").Get<En
 builder.Services.AddSingleton(engineConfiguration);
 
 builder.Services.AddScoped<ITenantFactory, TenantFactory>();
-builder.Services.AddScoped<IGetDataFactory, GetDataFactory>();
+builder.Services.AddScoped<IErrorTypeModuleFactory, ErrorTypeModuleFactory>();
 
 builder.Services.AddDbContext<SqlEntities>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("rhrp")));
 
@@ -72,6 +72,12 @@ foreach (var directory in directories)
 builder.Services.Scan(scan => scan
     .FromAssemblies(assemblies)
     .AddClasses(classes => classes.AssignableTo<ITenant>(), publicOnly: true)
+    .AsImplementedInterfaces()
+    .WithScopedLifetime());
+
+builder.Services.Scan(scan => scan
+    .FromAssemblies(assemblies)
+    .AddClasses(classes => classes.AssignableTo<IErrorTypeModule>(), publicOnly: true)
     .AsImplementedInterfaces()
     .WithScopedLifetime());
 

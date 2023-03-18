@@ -1,6 +1,4 @@
-﻿using Dashboard.Common.Modules;
-
-namespace Dashboard.Common.Interfaces
+﻿namespace Dashboard.Common.Interfaces
 {
     public interface ITenant
     {
