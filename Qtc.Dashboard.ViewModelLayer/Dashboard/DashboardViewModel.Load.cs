@@ -42,8 +42,14 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
                 var module = _tenant.GetErrorTypeProcessor();
 
                 var data = module.GetData(integrationName);
+
+                // add all items from data to ListofErrors
+                foreach (var error in data)
+                {
+                    ListOfErrors.Add(error);
+                }
                 // Do something with the data
-                Console.WriteLine(data);
+                //Console.WriteLine(data);
             }
 
 

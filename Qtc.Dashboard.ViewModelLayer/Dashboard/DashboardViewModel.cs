@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Dashboard.Common.Interfaces;
 using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Qtc.Dashboard.BusinessLayer.EntityClasses;
+using Dashboard.Common.DataModels;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
@@ -46,6 +47,7 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             EventAction = "list";
             //QtcHeaderImage = Utility.GetQtcHeaderImage;
             DisplayName = "Dashboard";
+            ListOfErrors = new List<Errors>();
             //Lob = "Another Example ";
         }
         #endregion

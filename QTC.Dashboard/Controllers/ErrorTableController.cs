@@ -2,75 +2,72 @@
 using Dashboard.Common.DataModels.ControllerModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Qtc.Dashboard.ViewModelLayer.Dashboard;
+using QTC.Dashboard.WebApp.Interfaces;
 using System.Data;
 using System.Diagnostics;
+using System.Reflection.Metadata;
 
 namespace QTC.Dashboard.WebApp.Controllers
 {
-    public class ErrorTableController : Controller
+    public class ErrorTableController : BaseMvcController
     {
-        public ErrorTableModel vals = new ErrorTableModel();
-        private SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        private readonly ITenantFactory _tenantFactory;
+        private readonly IConfiguration _config;
+        private readonly ILogger<DashboardViewModel> _logger;
+        public readonly string[] neededHeaders;
 
-        public ErrorTableController() {
-            // create an array of strings with the headers needed
-            string[] neededHeaders = new string[] { "Application Name", "Layer", "Module", "Alert", "AlertTeam", "Severity", "ServerName", "ErrorCode", "Error Message", "Error Date", "User", "View" };
+        public ErrorTableController(ILogger<ErrorTableController> logger,
+                                            IConfiguration config, ITenantFactory tenantFactory)
+        : base(logger, config)
+        {
+            //_logger = logger;
+            _config = config;
+            _tenantFactory = tenantFactory;
             
-            // save the needed headers as a list of strings
-            vals.headers = neededHeaders.ToList();
-
         }
 
         // takes in the org and application that is sent to the page when user clicks on specific application
-        public IActionResult Index(string org, string app)
+        public IActionResult Index(string lob)
         {
-            // pass in the values of the org name and app name to the model to send to view (displayed on page)
-            vals.orgName = org;
-            vals.appName = app;
-
-            List<Errors> errors = new List<Errors>();
-
-            string query = "Select * FROM ErrorsTable WHERE ApplicationName = '"+app+"'"; // query that we want to execute
-
-            // retreive data from sql database and save below
-            SqlDataAdapter data = new SqlDataAdapter(query, connection);
-
-            // create a data table and populate it with data above
-            DataTable dt = new DataTable();
-            data.Fill(dt);
-
-            // if we have at least 1 row of Errors, retreive it and print 
-            if (dt.Rows.Count > 0)
+            try
             {
-                // loop through all the rows in the data table
-                for (int i = 0; i < dt.Rows.Count; i++)
+                var vm = new DashboardViewModel(lob, "list");
+                // create a new instance of Dashboard View Model and instantiate with default vals in Init() method
+                //var vm = new DashboardViewModel();
+                vm.Init();
+
+                SetMVCCommonViewModelProperties(vm);
+
+                // this shows a spinning logo while the information is being loaded
+                if (vm.ShowSpinner.HasValue && vm.ShowSpinner.Value)
                 {
-                    // create a new Error and populate it (reference Error.cs for format)
-                    Errors currentError = new Errors
-                    {
-                        ApplicationName = Convert.ToString(dt.Rows[i]["ApplicationName"]),
-                        Layer = Convert.ToString(dt.Rows[i]["Layer"]),
-                        Module = Convert.ToString(dt.Rows[i]["Module"]),
-                        Alert = Convert.ToString(dt.Rows[i]["Alert"]),
-                        AlertTeam = Convert.ToString(dt.Rows[i]["AlertTeam"]),
-                        Severity = Convert.ToString(dt.Rows[i]["Severity"]),
-                        ServerName = Convert.ToString(dt.Rows[i]["ServerName"]),
-                        ErrorCode = Convert.ToInt32(dt.Rows[i]["ErrorCode"]),
-                        ErrorMessage = Convert.ToString(dt.Rows[i]["ErrorMessage"]),
-                        ErrorDate = Convert.ToDateTime(dt.Rows[i]["ErrorDate"]),
-                        User = Convert.ToString(dt.Rows[i]["UserName"])
-                    };
-
-                    // add the current Error to the arraylist
-                    errors.Add(currentError);
+                    return View("~/Views/Shared/ShowSpinner.cshtml");
                 }
+
+                vm.SetTenant(_tenantFactory.CreateTenant(lob, "LIBRARY"));
+
+                // create an array of strings with the headers needed
+                var neededHeaders = new string[] { "Application Name", "Layer", "Module", "Alert", "AlertTeam", "Severity", "ServerName", "ErrorCode", "Error Message", "Error Date", "User", "View" };
+                vm.headers = neededHeaders.ToList();
+                //GetUserPermissions(vm);
+
+                ////Don't allow access for event referrals to inclinic page
+                //if (!vm.Permissions.HasMedicalRecordsAccess)
+                //{
+                //    return View("~/Views/Shared/Unauthorized.cshtml");
+                //}
+
+                vm.HandleRequest();
+
+                // redirect user to errortable view under "views folder"
+                return View(vm);
             }
-
-            // set the errors to send to view 
-            vals.errors = errors;
-
-            // return the values needed for the error table
-            return View(vals);
+            catch (Exception e)
+            {
+                // re-throw cause the error page to display
+                throw;
+            }
         }
     }
 }

@@ -2,10 +2,10 @@
 @*@model QTC.Dashboard.WebApp.Views.ErrorTable.IndexModel
 *@
 
-@model Dashboard.Common.DataModels.ControllerModel.ErrorTableModel
+@model Qtc.Dashboard.ViewModelLayer.Dashboard.DashboardViewModel
 @{
 	Layout = "~/Views/Shared/_Layout.cshtml";
-	ViewData["Title"] = Model.orgName+"-"+Model.appName; // create the title on the page tab
+	//ViewData["Title"] = Model.orgName+"-"+Model.appName; // create the title on the page tab
 }
 
 <div class="container-fluid">
@@ -14,14 +14,14 @@
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <!-- Display the purple header on top of the table-->
-            <h6 class="m-0 font-weight-bold text-primary">@Model.orgName - @Model.appName</h6>
+            @*<h6 class="m-0 font-weight-bold text-primary">@Model.orgName - @Model.appName</h6>*@
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            @* Print all the headers on the error page*@
+                            //Print all the headers on the error page
                             @foreach(var item in Model.headers){
                                 <td>@item</td>
                             }
@@ -30,7 +30,7 @@
                     <tbody>
 
                         @{
-                            foreach(var error in Model.errors)
+                            foreach(var error in Model.ListOfErrors)
                             {
                                 <tr>
                                     <td>@error.ApplicationName</td>

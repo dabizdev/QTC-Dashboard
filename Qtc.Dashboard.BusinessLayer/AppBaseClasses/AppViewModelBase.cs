@@ -1,5 +1,6 @@
 ﻿using Common.DA.Library;
 using Common.DA.Library.BaseClasses;
+using Dashboard.Common.DataModels;
 
 namespace Qtc.Dashboard.BusinessLayer.AppBaseClasses
 {
@@ -12,6 +13,10 @@ namespace Qtc.Dashboard.BusinessLayer.AppBaseClasses
         //public string Message { get; set; }
         //public string User { get; set; }
         public bool? ShowSpinner { get; set; }
+
+        public List<Errors> ListOfErrors { get; set; }
+
+        public List<string> headers { get; set; }
 
         protected void Init()
         {
