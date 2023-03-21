@@ -19,7 +19,7 @@ ConfigurationManager configuration = builder.Configuration;
 var engineConfiguration = configuration.GetSection("EngineConfiguration").Get<EngineConfiguration>();
 builder.Services.AddSingleton(engineConfiguration);
 
-builder.Services.AddScoped<ITenantFactory, TenantFactory>();
+builder.Services.AddTransient<ITenantFactory, TenantFactory>();
 
 
 builder.Services.AddDbContext<SqlEntities>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("rhrp")));
