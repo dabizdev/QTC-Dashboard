@@ -1,6 +1,7 @@
 ﻿using Dashboard.Common.Interfaces;
 using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Qtc.Dashboard.BusinessLayer.EntityClasses;
+using System.Diagnostics;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
@@ -11,7 +12,9 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         public void SetTenant(ITenant tenant)
         {
             _tenant = tenant;
+            SetErrorTypeModule(_tenant.GetErrorTypeProcessor());
         }
+
 
         public void SetErrorTypeModule(IErrorTypeModule errorTypeModule)
         {

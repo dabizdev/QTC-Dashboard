@@ -30,7 +30,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                 var vm = new DashboardViewModel(lob, "list");
                 // create a new instance of Dashboard View Model and instantiate with default vals in Init() method
                 //var vm = new DashboardViewModel();
-                vm.Init();
+                //vm.Init();
 
                 SetMVCCommonViewModelProperties(vm);
 
@@ -39,12 +39,10 @@ namespace QTC.Dashboard.WebApp.Controllers
                 {
                     return View("~/Views/Shared/ShowSpinner.cshtml");
                 }
-                var data = GetErrors("RHRP");
-                Console.WriteLine("test");
-                //vm.SetErrorTypeModule(_errorTypeModuleFactory.CreateErrorTypeModule("sql"));
+
                 vm.SetTenant(_tenantFactory.CreateTenant(lob, "LIBRARY"));
-                
-                //vm.SetGetData(_errorTypeModuleFactory.CreateGetData(lob, "LIBRARY"));
+                //vm.SetErrorTypeModule(vm.GetTenant().GetErrorTypeProcessor());
+                //var data = this.GetErrors(lob);
                 //GetUserPermissions(vm);
 
                 ////Don't allow access for event referrals to inclinic page

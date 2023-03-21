@@ -9,21 +9,17 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
     {
         public bool Load()
         {
-            OrganizationErrorsManager organizationErrorsManager = new
-                OrganizationErrorsManager();
+            OrganizationErrorsManager organizationErrorsManager = new OrganizationErrorsManager();
 
             //ViewEntity = new ViewEntity();
 
 
-            ViewEntity.Organization = organizationErrorsManager.GetOrganizationByLob("RHRP");
+            ViewEntity.Organization = organizationErrorsManager.GetOrganizationByLob(this.Lob);
             Console.WriteLine(ViewEntity.Organization);
             ViewEntity.Integrations = organizationErrorsManager.GetOrganizationIntegrationsByOrganizationId(ViewEntity.Organization.OrganizationId);
 
             // this was the original line that was uncommented
-            //var data = _tenant.GetData("SQL");
-
-            Debug.WriteLine(ViewEntity.Organization);
-            Debug.WriteLine(ViewEntity.Integrations);
+            var tenant = _tenant;
 
             // loop through each integration point (stored in the Name column of the OrganizationIntegrations table), 
             // and use the _tenant.GetData() method to retrieve data for each integration point
@@ -32,12 +28,10 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             {
                 string integrationName = integration.Name;
 
-                
-
-                //var data = _errorTypeModule.GetData(integrationName);
+                var integrationPoints = _tenant.GetErrorTypeProcessor();
 
                 // Do something with the data
-                //Debug.WriteLine(data);
+                Debug.WriteLine(integrationPoints);
             }
 
 

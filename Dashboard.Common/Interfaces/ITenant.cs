@@ -4,7 +4,7 @@
     {
         public string Name { get; }
 
-        IErrorTypeModule GetErrorTypeProcessor();
+        public IErrorTypeModule GetErrorTypeProcessor();
 
     }
 }

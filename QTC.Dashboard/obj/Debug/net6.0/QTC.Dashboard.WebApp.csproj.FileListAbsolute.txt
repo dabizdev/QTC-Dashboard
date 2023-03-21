@@ -813,3 +813,8 @@ C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\obj\Debug\net6.0\QTC.
 C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\obj\Debug\net6.0\QTC.Dashboard.WebApp.genruntimeconfig.cache
 C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\obj\Debug\net6.0\ref\QTC.Dashboard.WebApp.dll
 C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\obj\Debug\net6.0\QTC.Dashboard.WebApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\bin\Debug\net6.0\Oracle.ManagedDataAccess.dll
+C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll

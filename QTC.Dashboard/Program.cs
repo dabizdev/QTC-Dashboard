@@ -74,12 +74,12 @@ builder.Services.Scan(scan => scan
     .AddClasses(classes => classes.AssignableTo<ITenant>(), publicOnly: true)
     .AsImplementedInterfaces()
     .WithScopedLifetime());
-
+/*
 builder.Services.Scan(scan => scan
     .FromAssemblies(assemblies)
     .AddClasses(classes => classes.AssignableTo<IErrorTypeModule>(), publicOnly: true)
     .AsImplementedInterfaces()
-    .WithScopedLifetime());
+    .WithScopedLifetime());*/
 
 var app = builder.Build();
 

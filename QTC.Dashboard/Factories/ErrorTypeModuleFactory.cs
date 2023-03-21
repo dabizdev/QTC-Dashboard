@@ -17,9 +17,10 @@ namespace QTC.Dashboard.WebApp.Factories
 
         public IErrorTypeModule CreateErrorTypeModule(string integrationPoint)
         {
-            //var tenantName = type == "LIBRARY" ? name : "ServiceTenant";
-            var errorTypeModule = _provider.GetServices<IErrorTypeModule>().SingleOrDefault();
+            var errorTypeModule = _provider.GetRequiredService<IErrorTypeModule>();
+
             return errorTypeModule;
+            
         }
 
     }
