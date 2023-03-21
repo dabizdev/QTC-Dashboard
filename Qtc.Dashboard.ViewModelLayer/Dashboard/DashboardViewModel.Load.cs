@@ -39,7 +39,9 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             {
                 string integrationName = integration.Name;
 
-                var data = _tenant.GetErrorTypeProcessor();
+                var module = _tenant.GetErrorTypeProcessor();
+
+                var data = module.GetData(integrationName);
                 // Do something with the data
                 Console.WriteLine(data);
             }

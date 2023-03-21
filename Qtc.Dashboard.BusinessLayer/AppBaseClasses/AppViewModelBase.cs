@@ -19,7 +19,7 @@ namespace Qtc.Dashboard.BusinessLayer.AppBaseClasses
             base.Init();
             //Message = String.Empty;
             //Messages = new List<string>();
-            Lob = "Example"; // TODO: DELETE THIS AFTER
+            //Lob = this.Lob; // TODO: DELETE THIS AFTER
         }
     }
 }
