@@ -37,6 +37,8 @@ namespace QTC.Dashboard.WebApp.Controllers
                 //var vm = new DashboardViewModel();
                 vm.Init();
 
+                ViewData["LobName"] = lob;
+
                 SetMVCCommonViewModelProperties(vm);
 
                 // this shows a spinning logo while the information is being loaded

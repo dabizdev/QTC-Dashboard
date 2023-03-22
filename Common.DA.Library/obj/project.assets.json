@@ -3161,19 +3161,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jonathan\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj",
       "projectName": "Common.DA.Library",
-      "projectPath": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\Common.DA.Library\\Common.DA.Library.csproj",
-      "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jonathan\\source\\repos\\QTC-Dashboard\\Common.DA.Library\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\Common.DA.Library.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\Common.DA.Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3244,7 +3244,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

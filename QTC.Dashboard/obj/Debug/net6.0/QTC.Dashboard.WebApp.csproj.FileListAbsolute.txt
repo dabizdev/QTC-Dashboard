@@ -818,3 +818,8 @@ C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\bin\Debug\net6.0\Syst
 C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\bin\Debug\net6.0\System.DirectoryServices.dll
 C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
 C:\Users\Jonathan\source\repos\QTC-Dashboard\QTC.Dashboard\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Users\Admin\Documents\QTC\QTC.Dashboard\bin\Debug\net6.0\Oracle.ManagedDataAccess.dll
+C:\Users\Admin\Documents\QTC\QTC.Dashboard\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Admin\Documents\QTC\QTC.Dashboard\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\Admin\Documents\QTC\QTC.Dashboard\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Admin\Documents\QTC\QTC.Dashboard\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
