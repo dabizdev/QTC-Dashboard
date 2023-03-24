@@ -17,6 +17,6 @@ namespace Dashboard.Common.DataModels
 
         // each organizationWithApps component needs an Organization and list of applications for that organization
         public Organization organization { get; set; }
-        public List<Application> applications { get; set; }
+        public List<IntegrationPoints> applications { get; set; }
     }
 }

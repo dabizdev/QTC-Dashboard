@@ -9,18 +9,18 @@ namespace QTC.Dashboard.WebApp.Views.ViewComponents
     [ViewComponent(Name = "OrganizationItems")]
     public class OrganizationItemViewComponent : ViewComponent
     {
-        //private SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        private SqlConnection connection = new SqlConnection("Server=tcp:qtcstudents2022.database.windows.net,1433;Initial Catalog=DashboardDatabase;Persist Security Info=False;User ID=qtcUser;Password=#Classof2023;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         // create a list of strings that will hold all of the applications
-        //private readonly List<OrgsWithApps> orgsWtihApplications = new List<OrgsWithApps>();
+        private readonly List<OrgsWithApps> orgsWtihApplications = new List<OrgsWithApps>();
 
         // constructor that gets all the values
         public OrganizationItemViewComponent()
         {
             /*
              * call the database and pull all application names from the db
-             *//*
-            string query = "Select * FROM OrganizationTable"; // query that we want to execute
+             */
+            string query = "Select * FROM Organizations"; // query that we want to execute
 
             // retreive data from sql database and save below
             SqlDataAdapter data = new SqlDataAdapter(query, connection);
@@ -41,17 +41,25 @@ namespace QTC.Dashboard.WebApp.Views.ViewComponents
                     // get the information of the current organization
                     Organization currentOrg = new Organization
                     {
-                        LOBId = Convert.ToInt64(dt.Rows[i]["LOBId"]),
-                        ApplicationId = Convert.ToInt64(dt.Rows[i]["ApplicationId"]),
-                        IntegrationPoint = Convert.ToString(dt.Rows[i]["IntegrationPoint"]),
+                        OrganizationId = Convert.ToInt64(dt.Rows[i]["OrganizationId"]),
+                        ParentOrganizationId = Convert.ToInt64(dt.Rows[i]["ParentOrganizationId"]),
+                        OrgCode = Convert.ToString(dt.Rows[i]["OrgCode"]),
+                        Lob = Convert.ToString(dt.Rows[i]["Lob"]),
+                        Name = Convert.ToString(dt.Rows[i]["Name"]),
+                        Description = Convert.ToString(dt.Rows[i]["Description"]),
+                        Alias = Convert.ToString(dt.Rows[i]["Alias"]),
                         Address1 = Convert.ToString(dt.Rows[i]["Address1"]),
                         Address2 = Convert.ToString(dt.Rows[i]["Address2"]),
                         City = Convert.ToString(dt.Rows[i]["City"]),
                         State = Convert.ToString(dt.Rows[i]["State"]),
+                        ZipCode = Convert.ToString(dt.Rows[i]["ZipCode"]),
                         Country = Convert.ToString(dt.Rows[i]["Country"]),
-                        Description = Convert.ToString(dt.Rows[i]["Description"]),
-                        Name = Convert.ToString(dt.Rows[i]["Name"]),
-                        Active = Convert.ToBoolean(dt.Rows[i]["Active"]),
+                        Latitude = Convert.ToDecimal(dt.Rows[i]["Latitude"]),
+                        Longitude = Convert.ToDecimal(dt.Rows[i]["Longitude"]),
+                        GeoCodeQuality = Convert.ToString(dt.Rows[i]["GeoCodeQuality"]),
+                        GeoCodeSource = Convert.ToString(dt.Rows[i]["GeoCodeSource"]),
+                        Phone = Convert.ToString(dt.Rows[i]["Phone"]),
+                        Fax = Convert.ToString(dt.Rows[i]["Fax"]),
                         CreatedBy = Convert.ToString(dt.Rows[i]["CreatedBy"]),
                         CreatedDate = Convert.ToDateTime(dt.Rows[i]["CreatedDate"]),
                         UpdatedDate = Convert.ToDateTime(dt.Rows[i]["UpdatedDate"]),
@@ -62,7 +70,7 @@ namespace QTC.Dashboard.WebApp.Views.ViewComponents
                     newOrgToAdd.organization = currentOrg;
 
                     // create a query that gets the applicationid of the current org from the item above
-                    string query1 = "Select * FROM ApplicationTable WHERE ApplicationId = "+currentOrg.ApplicationId; 
+                    string query1 = "Select * FROM IntegrationPointTable WHERE Tenant = '" + currentOrg.Lob+"'"; 
 
                     // retreive data from sql database and save below
                     SqlDataAdapter data1 = new SqlDataAdapter(query1, connection);
@@ -72,7 +80,7 @@ namespace QTC.Dashboard.WebApp.Views.ViewComponents
                     data1.Fill(dt1);
 
                     // create a new list of applications to add
-                    List<Application> listOfApplications = new List<Application>();
+                    List<IntegrationPoints> listOfApplications = new List<IntegrationPoints>();
 
                     // if we have at least 1 row of Errors, retreive it and print 
                     if (dt1.Rows.Count > 0)
@@ -82,17 +90,23 @@ namespace QTC.Dashboard.WebApp.Views.ViewComponents
                         for (int j = 0; j < dt1.Rows.Count; j++)
                         {
                             // create a new Error and populate it (reference Error.cs for format)
-                            Application currentApplication = new Application
+                            IntegrationPoints currentApplication = new IntegrationPoints
                             {
-                                ApplicationId = Convert.ToInt64(dt1.Rows[j]["ApplicationId"]),
-                                ApplicationName = Convert.ToString(dt1.Rows[j]["ApplicationName"]),
-                                UserId = Convert.ToInt64(dt1.Rows[j]["UserId"]),
-                                APIUrl = Convert.ToString(dt1.Rows[j]["APIUrl"]),
-                                UserType = Convert.ToString(dt1.Rows[j]["UserType"]),
-                                CreatedBy = Convert.ToString(dt1.Rows[j]["CreatedBy"]),
-                                CreatedDate = Convert.ToDateTime(dt1.Rows[j]["CreatedDate"]),
-                                UpdatedDate = Convert.ToDateTime(dt1.Rows[j]["UpdatedDate"]),
-                                UpdatedBy = Convert.ToString(dt1.Rows[j]["UpdatedBy"])
+                                LOBId = Convert.ToInt64(dt1.Rows[i]["LOBId"]),
+                                ApplicationId = Convert.ToInt64(dt1.Rows[i]["ApplicationId"]),
+                                IntegrationPoint = Convert.ToString(dt1.Rows[i]["IntegrationPoint"]),
+                                Address1 = Convert.ToString(dt1.Rows[i]["Address1"]),
+                                Address2 = Convert.ToString(dt1.Rows[i]["Address2"]),
+                                City = Convert.ToString(dt1.Rows[i]["City"]),
+                                State = Convert.ToString(dt1.Rows[i]["State"]),
+                                Country = Convert.ToString(dt1.Rows[i]["Country"]),
+                                Description = Convert.ToString(dt1.Rows[i]["Description"]),
+                                Name = Convert.ToString(dt1.Rows[i]["Name"]),
+                                Active = Convert.ToBoolean(dt1.Rows[i]["Active"]),
+                                CreatedBy = Convert.ToString(dt1.Rows[i]["CreatedBy"]),
+                                CreatedDate = Convert.ToDateTime(dt1.Rows[i]["CreatedDate"]),
+                                UpdatedDate = Convert.ToDateTime(dt1.Rows[i]["UpdatedDate"]),
+                                UpdatedBy = Convert.ToString(dt1.Rows[i]["UpdatedBy"])
                             };
                             // add the current application to the list of applications
                             listOfApplications.Add(currentApplication);
@@ -105,24 +119,14 @@ namespace QTC.Dashboard.WebApp.Views.ViewComponents
                     // add the current orgs with applications to the arraylist
                     orgsWtihApplications.Add(newOrgToAdd);
                 }
-            }*/
+            }
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var vm = new DashboardViewModel();
-            vm.Init();
-
-            //SetMVCCommonViewModelProperties(vm);
-
-            // this shows a spinning logo while the information is being loaded
-            if (vm.ShowSpinner.HasValue && vm.ShowSpinner.Value)
-            {
-                return View("~/Views/Shared/ShowSpinner.cshtml");
-            }
 
             // redirect user to errortable view under "views folder"
-            return View("Index", vm);
+            return View("Index", orgsWtihApplications);
             // returns the list of organizations with applications to the view, used in /Shared/_Layout.cshtml
             //return View("Index", orgsWtihApplications);
         }
