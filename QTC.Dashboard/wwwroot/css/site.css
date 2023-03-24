@@ -16,3 +16,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.table td.message {
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
