@@ -104,6 +104,7 @@ Notes:          CSS Validation pending for Bootstrap 5.1.3
 
 .btn-link:hover, a:hover{
     color: #850F89;
+    cursor: pointer;
 }
 
 .btn-primary {
