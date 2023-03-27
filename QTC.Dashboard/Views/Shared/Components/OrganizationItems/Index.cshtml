@@ -7,7 +7,7 @@
 @foreach (var currentOrganization in Model)
 {
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+        <a class="nav-link collapsed" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob" data-toggle="collapse" data-target="#collapseTwo"
         aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-cog"></i>
             <!-- Get the name of the current organization and display-->
@@ -16,7 +16,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <!-- Display sub window with org name applications-->
-                <h6 class="collapse-header"> @currentOrganization.organization.Lob's Integration Points: </h6>
+                <!-- <h6 class="collapse-header"> @currentOrganization.organization.Lob's Integration Points: </h6>-->
                     <!-- Loop through all of the applications of the current organization -->
                     @foreach (var currentApplication in currentOrganization.applications)
                     {
