@@ -196,7 +196,7 @@ Notes:          CSS Validation pending for Bootstrap 5.1.3
     overflow-x: hidden;
 }
 
-/*Truncated error message*/
+/*Truncate error message*/
 .table td.message {
     max-width: 500px;
     overflow: hidden;
