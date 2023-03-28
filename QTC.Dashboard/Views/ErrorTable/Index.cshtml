@@ -10,7 +10,7 @@
 
 <div class="container-fluid">
 
-    @* DataTales Example *@
+    @* DataTales *@
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             @* Display the purple header on top of the table *@
@@ -23,7 +23,11 @@
                         <tr>
                             @* Print all the headers on the error page *@
                             @foreach(var item in Model.headers){
+                                if(@item == "View") {
                                 <td>@item</td>
+                                }else {
+                                    <td class="header">@item</td>
+                                }
                             }
                         </tr>
                     </thead>
