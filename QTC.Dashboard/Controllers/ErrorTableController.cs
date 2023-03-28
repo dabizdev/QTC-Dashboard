@@ -28,11 +28,20 @@ namespace QTC.Dashboard.WebApp.Controllers
         }
 
         // takes in the org and application that is sent to the page when user clicks on specific application
-        public IActionResult Index(string lob)
+        public IActionResult Index(string lob, string integration)
         {
             try
             {
-                var vm = new DashboardViewModel(lob, "list");
+                Console.WriteLine($"Index method called with integration: {integration}");
+
+                if (string.IsNullOrWhiteSpace(integration))
+                {
+                    return View(new DashboardViewModel());
+                }
+
+                Console.WriteLine($"Controller: lob={lob}, integration={integration}");
+
+                var vm = new DashboardViewModel(lob, "list", integration);
                 // create a new instance of Dashboard View Model and instantiate with default vals in Init() method
                 //var vm = new DashboardViewModel();
                 vm.Init();

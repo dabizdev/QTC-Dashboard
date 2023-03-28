@@ -23,7 +23,7 @@
                         <!-- Create a link that sends user to errortable and pass in parameters org and app to the link-->
                         <!-- https://localhost:7001/ErrorTable/Index?lob=RHRP">https://localhost:7001/ErrorTable/Index?lob=RHRP -->
                         @*<a class="collapse-item" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob&app=@currentApplication.Name">@currentApplication.Name</a>*@
-                        <a class="collapse-item" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob">@currentApplication.IntegrationPoint</a>
+                    <a class="collapse-item" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob&integration=@currentApplication.IntegrationPoint">@currentApplication.IntegrationPoint</a>
                     }
             </div>
         </div>

@@ -22,8 +22,12 @@
                     <thead>
                         <tr>
                             @* Print all the headers on the error page *@
-                            @foreach(var item in Model.headers){
-                                <td>@item</td>
+                            @if (Model.headers != null)
+                            {
+                                foreach (var item in Model.headers)
+                                {
+                                    <td>@item</td>
+                                }
                             }
                         </tr>
                     </thead>
