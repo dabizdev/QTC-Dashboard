@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('#dataTable tbody').on('click', '.view-error', function () {
         var data = table.row(this).data();
 
-        /*Display error*/
+        /*Display error - currently workds for 12 headers (admin table)*/
         $("#modal-title").text(data[0] + " - " + data[5]);
         $("#modal-title").prepend("<i class='fa fa-eye'></i> ")
 
