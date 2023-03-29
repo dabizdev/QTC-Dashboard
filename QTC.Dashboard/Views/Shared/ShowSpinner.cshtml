@@ -1,0 +1,14 @@
+﻿@{
+    var targetUrl = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}{Context.Request.QueryString}";
+    TempData["ShowSpinner"] = false;
+    ViewBag.Title = "Loading...";
+}
+
+@Html.Partial("_Spinner")
+
+<script type="text/javascript">
+    //Show spinner
+    PageSpinner.startSpinner();
+    // similar behavior as clicking on a link
+    window.location.href = "@targetUrl";
+</script>

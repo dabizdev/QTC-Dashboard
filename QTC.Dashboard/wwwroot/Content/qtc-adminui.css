@@ -195,3 +195,16 @@ Notes:          CSS Validation pending for Bootstrap 5.1.3
 .table-responsive {
     overflow-x: hidden;
 }
+
+/*Truncate error message*/
+.table td.message {
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.view-error:hover, .header:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
