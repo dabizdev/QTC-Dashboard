@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V47w8aJBZ1iJ2N9gVtpkQgiPUZNF8lichN7j7eD62Ng=",
+  "Hash": "f6IAm49rpyQlGG9p3AjmUXTHlUnCp3ED9ALqKXFlkok=",
   "Source": "QTC.Dashboard.WebApp",
   "BasePath": "_content/QTC.Dashboard.WebApp",
   "Mode": "Default",
@@ -306,6 +306,23 @@
       "OriginalItemSpec": "wwwroot\\js\\demo\\datatables-demo.js"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\wwwroot\\js\\errorTableNavigation.js",
+      "SourceId": "QTC.Dashboard.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\wwwroot\\",
+      "BasePath": "_content/QTC.Dashboard.WebApp",
+      "RelativePath": "js/errorTableNavigation.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\errorTableNavigation.js"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\wwwroot\\js\\sb-admin-2.js",
       "SourceId": "QTC.Dashboard.WebApp",
       "SourceType": "Discovered",
@@ -338,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\sb-admin-2.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\wwwroot\\js\\sidebar.js",
+      "SourceId": "QTC.Dashboard.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\wwwroot\\",
+      "BasePath": "_content/QTC.Dashboard.WebApp",
+      "RelativePath": "js/sidebar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\sidebar.js"
     },
     {
       "Identity": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\wwwroot\\js\\site.js",

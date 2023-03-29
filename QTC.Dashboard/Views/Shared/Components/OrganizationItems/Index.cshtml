@@ -8,9 +8,8 @@
 {
     <li class="nav-item">
         <a class="nav-link collapsed" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob" data-toggle="collapse" data-target="#collapseTwo"
-        aria-expanded="true" aria-controls="collapseTwo">
+       aria-expanded="true" aria-controls="collapseTwo" onclick="saveSelectedOrg('@currentOrganization.organization.Lob')">
             <i class="fas fa-fw fa-cog"></i>
-            <!-- Get the name of the current organization and display-->
             <span>@currentOrganization.organization.Lob</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -23,12 +22,17 @@
                         <!-- Create a link that sends user to errortable and pass in parameters org and app to the link-->
                         <!-- https://localhost:7001/ErrorTable/Index?lob=RHRP">https://localhost:7001/ErrorTable/Index?lob=RHRP -->
                         @*<a class="collapse-item" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob&app=@currentApplication.Name">@currentApplication.Name</a>*@
-                    <a class="collapse-item" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob&integration=@currentApplication.IntegrationPoint">@currentApplication.IntegrationPoint</a>
+                    <a class="collapse-item" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob&integration=@currentApplication.IntegrationPoint" onclick="saveSelectedIntegration('@currentApplication.IntegrationPoint')">@currentApplication.IntegrationPoint</a>
+
+                    //<a class="collapse-item" href="#" onclick="navigateToErrorTable('@currentOrganization.organization.Lob', '@currentApplication.IntegrationPoint')">@currentApplication.IntegrationPoint</a>
+
                     }
             </div>
         </div>
     </li>
 }
+
+
 
 @*<li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
