@@ -92,21 +92,21 @@ namespace QTC.Dashboard.WebApp.Views.ViewComponents
                             // create a new Error and populate it (reference Error.cs for format)
                             IntegrationPoints currentApplication = new IntegrationPoints
                             {
-                                LOBId = Convert.ToInt64(dt1.Rows[i]["LOBId"]),
-                                ApplicationId = Convert.ToInt64(dt1.Rows[i]["ApplicationId"]),
-                                IntegrationPoint = Convert.ToString(dt1.Rows[i]["IntegrationPoint"]),
-                                Address1 = Convert.ToString(dt1.Rows[i]["Address1"]),
-                                Address2 = Convert.ToString(dt1.Rows[i]["Address2"]),
-                                City = Convert.ToString(dt1.Rows[i]["City"]),
-                                State = Convert.ToString(dt1.Rows[i]["State"]),
-                                Country = Convert.ToString(dt1.Rows[i]["Country"]),
-                                Description = Convert.ToString(dt1.Rows[i]["Description"]),
-                                Name = Convert.ToString(dt1.Rows[i]["Name"]),
-                                Active = Convert.ToBoolean(dt1.Rows[i]["Active"]),
-                                CreatedBy = Convert.ToString(dt1.Rows[i]["CreatedBy"]),
-                                CreatedDate = Convert.ToDateTime(dt1.Rows[i]["CreatedDate"]),
-                                UpdatedDate = Convert.ToDateTime(dt1.Rows[i]["UpdatedDate"]),
-                                UpdatedBy = Convert.ToString(dt1.Rows[i]["UpdatedBy"])
+                                LOBId = Convert.ToInt64(dt1.Rows[j]["LOBId"]),
+                                ApplicationId = Convert.ToInt64(dt1.Rows[j]["ApplicationId"]),
+                                IntegrationPoint = Convert.ToString(dt1.Rows[j]["IntegrationPoint"]),
+                                Address1 = Convert.ToString(dt1.Rows[j]["Address1"]),
+                                Address2 = Convert.ToString(dt1.Rows[j]["Address2"]),
+                                City = Convert.ToString(dt1.Rows[j]["City"]),
+                                State = Convert.ToString(dt1.Rows[j]["State"]),
+                                Country = Convert.ToString(dt1.Rows[j]["Country"]),
+                                Description = Convert.ToString(dt1.Rows[j]["Description"]),
+                                Name = Convert.ToString(dt1.Rows[j]["Name"]),
+                                Active = Convert.ToBoolean(dt1.Rows[j]["Active"]),
+                                CreatedBy = Convert.ToString(dt1.Rows[j]["CreatedBy"]),
+                                CreatedDate = Convert.ToDateTime(dt1.Rows[j]["CreatedDate"]),
+                                UpdatedDate = Convert.ToDateTime(dt1.Rows[j]["UpdatedDate"]),
+                                UpdatedBy = Convert.ToString(dt1.Rows[j]["UpdatedBy"])
                             };
                             // add the current application to the list of applications
                             listOfApplications.Add(currentApplication);

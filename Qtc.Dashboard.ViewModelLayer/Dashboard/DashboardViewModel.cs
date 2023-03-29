@@ -9,6 +9,7 @@ using Dashboard.Common.Interfaces;
 using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Qtc.Dashboard.BusinessLayer.EntityClasses;
 using Dashboard.Common.DataModels;
+using Microsoft.VisualBasic;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
@@ -21,15 +22,21 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         }
 
         #region Constructor
+        public string Integration { get; set; }
         public DashboardViewModel() : base() => Init();
 
         public DashboardViewModel(
             string lob = "RHRP",
-            string eventAction = "list") : base()
+            string eventAction = "list",
+             string integration = "SQL") : base()
         {
             Init();
             Lob = lob;
             EventAction = eventAction;
+            Integration = integration;
+
+           
+
         }
 
         #endregion

@@ -7,6 +7,7 @@ using QTC.Dashboard.WebApp.Interfaces;
 using System.Data;
 using System.Diagnostics;
 using System.Reflection.Metadata;
+using System.Web;
 
 namespace QTC.Dashboard.WebApp.Controllers
 {
@@ -28,11 +29,26 @@ namespace QTC.Dashboard.WebApp.Controllers
         }
 
         // takes in the org and application that is sent to the page when user clicks on specific application
-        public IActionResult Index(string lob)
+        public IActionResult Index()
         {
             try
             {
-                var vm = new DashboardViewModel(lob, "list");
+                var queryString = Request.QueryString.ToString();
+                var decodedQuery = HttpUtility.HtmlDecode(queryString); /* Decodes the query string */
+                var parsedQuery = HttpUtility.ParseQueryString(decodedQuery); /* Parses decoded query string*/
+                var lob = parsedQuery["lob"];
+                var integration = parsedQuery["integration"];
+
+                Console.WriteLine("Query string: " + queryString);
+
+                if (string.IsNullOrWhiteSpace(integration))
+                {
+                    return View(new DashboardViewModel());
+                }
+
+                Console.WriteLine($"Controller: lob={lob}, integration={integration}");
+
+                var vm = new DashboardViewModel(lob, "list", integration);
                 // create a new instance of Dashboard View Model and instantiate with default vals in Init() method
                 //var vm = new DashboardViewModel();
                 vm.Init();

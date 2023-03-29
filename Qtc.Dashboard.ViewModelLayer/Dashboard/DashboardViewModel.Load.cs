@@ -35,22 +35,31 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
             // loop through each integration point (stored in the Name column of the OrganizationIntegrations table), 
             // and use the _tenant.GetData() method to retrieve data for each integration point
 
+            if (!string.IsNullOrEmpty(Integration))
+            {
+                ViewEntity.Integrations = ViewEntity.Integrations
+                    .Where(integration => string.Equals(integration.Name, Integration, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+
             foreach (var integration in ViewEntity.Integrations)
             {
                 string integrationName = integration.Name;
+                Console.WriteLine($"Processing integration: {integrationName}");
 
                 var module = _tenant.GetErrorTypeProcessor();
 
                 var data = module.GetData(integrationName);
+                Console.WriteLine($"Integration: {integrationName}, Error count: {data.Count}");
 
-                // add all items from data to ListofErrors
+                // Add all items from data to ListofErrors
                 foreach (var error in data)
                 {
                     ListOfErrors.Add(error);
                 }
-                // Do something with the data
-                //Console.WriteLine(data);
             }
+
 
 
             //for (int i = 0; i < ViewEntity.Organization.OrganizationIntegrations.Count; i++)
