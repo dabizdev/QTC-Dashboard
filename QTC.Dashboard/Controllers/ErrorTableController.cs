@@ -7,6 +7,7 @@ using QTC.Dashboard.WebApp.Interfaces;
 using System.Data;
 using System.Diagnostics;
 using System.Reflection.Metadata;
+using System.Web;
 
 namespace QTC.Dashboard.WebApp.Controllers
 {
@@ -28,11 +29,17 @@ namespace QTC.Dashboard.WebApp.Controllers
         }
 
         // takes in the org and application that is sent to the page when user clicks on specific application
-        public IActionResult Index(string lob, string integration)
+        public IActionResult Index()
         {
             try
             {
-                Console.WriteLine($"Index method called with integration: {integration}");
+                var queryString = Request.QueryString.ToString(); /* Reason why query string was changing & to &amp;, I believe it was encoding the query string. */
+                var decodedQuery = HttpUtility.HtmlDecode(queryString); /* Decodes the query string */
+                var parsedQuery = HttpUtility.ParseQueryString(decodedQuery); /* Parses decoded query string*/
+                var lob = parsedQuery["lob"];
+                var integration = parsedQuery["integration"];
+
+                Console.WriteLine("Query string: " + queryString);
 
                 if (string.IsNullOrWhiteSpace(integration))
                 {
