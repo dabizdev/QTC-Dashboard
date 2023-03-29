@@ -33,7 +33,7 @@ namespace QTC.Dashboard.WebApp.Controllers
         {
             try
             {
-                var queryString = Request.QueryString.ToString(); /* Reason why query string was changing & to &amp;, I believe it was encoding the query string. */
+                var queryString = Request.QueryString.ToString();
                 var decodedQuery = HttpUtility.HtmlDecode(queryString); /* Decodes the query string */
                 var parsedQuery = HttpUtility.ParseQueryString(decodedQuery); /* Parses decoded query string*/
                 var lob = parsedQuery["lob"];
