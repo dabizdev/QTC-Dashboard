@@ -91,3 +91,13 @@ div.dataTables_scrollBody table thead .sorting_desc:after {
     pointer-events: none;
     content: none;
 }
+
+/*Handle table overflow*/
+.table-responsive {
+    overflow-x: scroll;
+}
+
+
+#help-button-container {
+    height: 100%;
+}
