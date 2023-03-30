@@ -14,6 +14,7 @@ using Dashboard.Common.Modules;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection;
 using Dashboard.Common.Interfaces;
+using Qtc.Dashboard.BusinessLayer.Common;
 
 namespace QTC.Dashboard.WebApp.Controllers
 {
@@ -116,9 +117,10 @@ namespace QTC.Dashboard.WebApp.Controllers
             //vm.Lob = "LOB under BaseMVCController";
         }
 
-        public void GetUserPermissions(DashboardViewModel vm)
+        public void GetUserPermissions(DashboardViewModel vm, string username, string password)
         {
-            //vm.Permissions = AuthPermissions.GetUserPermissions(User.ToString());
+            vm.Permissions = AuthPermissions.GetUserPermissions(username, password);
+
         }
 
         public void SetViewModelMessages(DashboardViewModel vm)

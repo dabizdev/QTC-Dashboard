@@ -69,7 +69,7 @@ namespace QTC.Dashboard.WebApp.Controllers
                 SetMVCCommonViewModelProperties(vm);
                 //vm.SetMedicalRecordsModule(GetMedicalRecordsModule(vm.Lob));
                 vm.SetTenant(_tenantFactory.CreateTenant(vm.Lob, "LIBRARY"));
-                GetUserPermissions(vm);
+                //GetUserPermissions(vm);
 
                 //Validation for data annotations
                 if (!ModelState.IsValid)
