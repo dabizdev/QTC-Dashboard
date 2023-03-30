@@ -18,6 +18,7 @@
     @* Custom styles for this template *@
     <link rel="stylesheet" href="~/css/sb-admin-2.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Content/qtc-adminui.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
 
 </head>
 <body>
@@ -208,11 +209,9 @@
     <script src="~/js/datatables.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    @await RenderSectionAsync("Scripts", required: false)
-    
-    
     <script src="~/js/sidebar.js" asp-append-version="true"></script>
 
+    @await RenderSectionAsync("Scripts", required: false)
 
 </body>
 </html>
