@@ -13,7 +13,7 @@
                     <h6 class="collapse-header">Integration Points:</h6>
                     @foreach (var currentApplication in currentOrganization.applications)
                     {
-                        <a class="collapse-item" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob&integration=@currentApplication.IntegrationPoint">@currentApplication.IntegrationPoint</a>
+                    <a class="collapse-item" href="/ErrorTable/Index?lob=@currentOrganization.organization.Lob&integration=@currentApplication.IntegrationPoint&username=bryan&password=qtcpass">@currentApplication.IntegrationPoint</a>
                     }
             </div>
         </div>
