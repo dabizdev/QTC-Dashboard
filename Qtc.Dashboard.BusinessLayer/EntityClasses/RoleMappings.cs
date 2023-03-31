@@ -1,4 +1,4 @@
-﻿using Common.DA.Library.BaseClasses;
+﻿using Common.EF.Library.BaseClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Qtc.Dashboard.BusinessLayer.EntityClasses
 {
-    public class RoleMappings : DAEntityBase
+    public class RoleMappings : EFEntityBase
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

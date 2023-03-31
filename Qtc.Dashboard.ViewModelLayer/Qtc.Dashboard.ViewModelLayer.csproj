@@ -12,8 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Dashboard.Common\Dashboard.Common.csproj" />
-    <ProjectReference Include="..\Qtc.Dashboard.BusinessLayer\Qtc.Dashboard.BusinessLayer.csproj" />
+      <ProjectReference Include="..\Dashboard.Common\Dashboard.Common.csproj" />
+	  <ProjectReference Include="..\Common.DA.Library\Common.EF.Library.csproj" />
+	  <ProjectReference Include="..\Qtc.Dashboard.BusinessLayer\Qtc.Dashboard.BusinessLayer.csproj" />
   </ItemGroup>
 
 </Project>

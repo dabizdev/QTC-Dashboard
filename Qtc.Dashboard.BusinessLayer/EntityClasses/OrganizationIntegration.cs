@@ -5,12 +5,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Common.DA.Library.BaseClasses;
+using Common.EF.Library.BaseClasses;
 
 namespace Qtc.Dashboard.BusinessLayer.EntityClasses
 {
     [Table("[dbo].[OrganizationIntegrations]")]
-    public class OrganizationIntegration : DAEntityBase
+    public class OrganizationIntegration : EFEntityBase
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

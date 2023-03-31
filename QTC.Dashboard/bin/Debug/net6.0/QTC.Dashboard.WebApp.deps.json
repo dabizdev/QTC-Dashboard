@@ -55,7 +55,6 @@
           "Microsoft.AspNetCore.Components.Forms": "6.0.0.0",
           "Microsoft.AspNetCore.Components.Server": "6.0.0.0",
           "Microsoft.AspNetCore.Components.Web": "6.0.0.0",
-          "Microsoft.AspNetCore.Connections.Abstractions.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.CookiePolicy": "6.0.0.0",
           "Microsoft.AspNetCore.Cors": "6.0.0.0",
           "Microsoft.AspNetCore.Cryptography.Internal": "6.0.0.0",
@@ -135,7 +134,6 @@
           "Microsoft.Extensions.Configuration.Xml": "6.0.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "6.0.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "6.0.0.0",
-          "Microsoft.Extensions.Features.Reference": "6.0.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions.Reference": "6.0.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0.0",
           "Microsoft.Extensions.FileProviders.Embedded": "6.0.0.0",
@@ -420,6 +418,9 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.922.41926"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {}
         }
       },
       "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
@@ -919,6 +920,9 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.922.41926"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Features.dll": {}
         }
       },
       "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
@@ -1467,7 +1471,7 @@
           "lib/net6.0/System.Windows.Extensions.dll": {}
         }
       },
-      "Common.DA.Library/1.0.0": {
+      "Common.EF.Library/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
@@ -1475,10 +1479,10 @@
           "Oracle.ManagedDataAccess.Core": "3.21.90"
         },
         "runtime": {
-          "Common.DA.Library.dll": {}
+          "Common.EF.Library.dll": {}
         },
         "compile": {
-          "Common.DA.Library.dll": {}
+          "Common.EF.Library.dll": {}
         }
       },
       "Dashboard.Common/1.0.0": {
@@ -1494,7 +1498,7 @@
       },
       "Qtc.Dashboard.BusinessLayer/1.0.0": {
         "dependencies": {
-          "Common.DA.Library": "1.0.0",
+          "Common.EF.Library": "1.0.0",
           "Dashboard.Common": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.3",
@@ -1597,12 +1601,6 @@
       "Microsoft.AspNetCore.Components.Web/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Components.Web.dll": {}
-        },
-        "compileOnly": true
-      },
-      "Microsoft.AspNetCore.Connections.Abstractions.Reference/6.0.0.0": {
-        "compile": {
-          "Microsoft.AspNetCore.Connections.Abstractions.dll": {}
         },
         "compileOnly": true
       },
@@ -2077,12 +2075,6 @@
       "Microsoft.Extensions.Diagnostics.HealthChecks/6.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Diagnostics.HealthChecks.dll": {}
-        },
-        "compileOnly": true
-      },
-      "Microsoft.Extensions.Features.Reference/6.0.0.0": {
-        "compile": {
-          "Microsoft.Extensions.Features.dll": {}
         },
         "compileOnly": true
       },
@@ -3869,7 +3861,7 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "Common.DA.Library/1.0.0": {
+    "Common.EF.Library/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3950,11 +3942,6 @@
       "sha512": ""
     },
     "Microsoft.AspNetCore.Components.Web/6.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.AspNetCore.Connections.Abstractions.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4350,11 +4337,6 @@
       "sha512": ""
     },
     "Microsoft.Extensions.Diagnostics.HealthChecks/6.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Extensions.Features.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

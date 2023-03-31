@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Common.DA.Library\Common.DA.Library.csproj" />
+    <ProjectReference Include="..\Common.DA.Library\Common.EF.Library.csproj" />
     <ProjectReference Include="..\Dashboard.Common\Dashboard.Common.csproj" />
   </ItemGroup>
 

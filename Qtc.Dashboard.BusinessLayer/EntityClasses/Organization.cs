@@ -1,4 +1,4 @@
-﻿using Common.DA.Library.BaseClasses;
+﻿using Common.EF.Library.BaseClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Qtc.Dashboard.BusinessLayer.EntityClasses
 {
     [Table("[dbo].[Organization]")]
-    public class Organization : DAEntityBase
+    public class Organization : EFEntityBase
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

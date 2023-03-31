@@ -1266,7 +1266,7 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "Common.DA.Library/1.0.0": {
+      "Common.EF.Library/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
@@ -1274,7 +1274,7 @@
           "Oracle.ManagedDataAccess.Core": "3.21.90"
         },
         "runtime": {
-          "Common.DA.Library.dll": {}
+          "Common.EF.Library.dll": {}
         }
       },
       "Dashboard.Common/1.0.0": {
@@ -1287,7 +1287,7 @@
       },
       "Qtc.Dashboard.BusinessLayer/1.0.0": {
         "dependencies": {
-          "Common.DA.Library": "1.0.0",
+          "Common.EF.Library": "1.0.0",
           "Dashboard.Common": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.3",
@@ -2111,7 +2111,7 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "Common.DA.Library/1.0.0": {
+    "Common.EF.Library/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

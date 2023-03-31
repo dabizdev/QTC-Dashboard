@@ -1771,7 +1771,7 @@
           }
         }
       },
-      "Common.DA.Library/1.0.0": {
+      "Common.EF.Library/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1781,10 +1781,10 @@
           "Oracle.ManagedDataAccess.Core": "3.21.90"
         },
         "compile": {
-          "bin/placeholder/Common.DA.Library.dll": {}
+          "bin/placeholder/Common.EF.Library.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Common.DA.Library.dll": {}
+          "bin/placeholder/Common.EF.Library.dll": {}
         }
       },
       "Dashboard.Common/1.0.0": {
@@ -1804,7 +1804,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Common.DA.Library": "1.0.0",
+          "Common.EF.Library": "1.0.0",
           "Dashboard.Common": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.3",
@@ -1822,6 +1822,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Common.EF.Library": "1.0.0",
           "Dashboard.Common": "1.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
           "Oracle.ManagedDataAccess.Core": "3.21.90",
@@ -4393,10 +4394,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Common.DA.Library/1.0.0": {
+    "Common.EF.Library/1.0.0": {
       "type": "project",
-      "path": "../Common.DA.Library/Common.DA.Library.csproj",
-      "msbuildProject": "../Common.DA.Library/Common.DA.Library.csproj"
+      "path": "../Common.DA.Library/Common.EF.Library.csproj",
+      "msbuildProject": "../Common.DA.Library/Common.EF.Library.csproj"
     },
     "Dashboard.Common/1.0.0": {
       "type": "project",
@@ -4427,19 +4428,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\sefer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj",
       "projectName": "QTC.Dashboard.WebApp",
-      "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\QTC.Dashboard\\obj\\",
+      "projectPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\QTC.Dashboard.WebApp.csproj",
+      "packagesPath": "C:\\Users\\sefer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\QTC.Dashboard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sefer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4453,14 +4454,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj"
+            "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj": {
+              "projectPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj"
             },
-            "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj"
+            "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj"
             },
-            "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj"
+            "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj": {
+              "projectPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj"
             }
           }
         }
@@ -4515,7 +4516,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
