@@ -19,7 +19,8 @@ namespace QTC.Dashboard.Controllers
             var vm = new DashboardViewModel();
             vm.Init();
 
-            //SetMVCCommonViewModelProperties(vm);
+            //save login time in session
+            HttpContext.Session.SetString("loginTime", DateTime.Now.ToString("MM/dd/yyyy hh:mm tt"));
 
             // this shows a spinning logo while the information is being loaded
             if (vm.ShowSpinner.HasValue && vm.ShowSpinner.Value)
@@ -29,7 +30,6 @@ namespace QTC.Dashboard.Controllers
 
             // redirect user to errortable view under "views folder"
             return View(vm);
-            //return View();
         }
 
         public IActionResult Privacy()
