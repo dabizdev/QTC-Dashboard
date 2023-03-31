@@ -10,6 +10,7 @@ using Qtc.Dashboard.BusinessLayer.AppBaseClasses;
 using Qtc.Dashboard.BusinessLayer.EntityClasses;
 using Dashboard.Common.DataModels;
 using Microsoft.VisualBasic;
+using Qtc.Dashboard.BusinessLayer.ApiEntityClasses;
 
 namespace Qtc.Dashboard.ViewModelLayer.Dashboard
 {
@@ -24,6 +25,10 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         #region Constructor
         public string Integration { get; set; }
         public DashboardViewModel() : base() => Init();
+
+        public string applicationUser { get; set; }
+
+
 
         public DashboardViewModel(
             string lob = "RHRP",
@@ -63,8 +68,8 @@ namespace Qtc.Dashboard.ViewModelLayer.Dashboard
         public ViewEntity ViewEntity { get; set; }
 
         //public SearchEntity SearchEntity { get; set; }
-        //public AuthUserPermissions Permissions { get; set; }
-        //public List<RoleMappings> RoleMappings { get; set; }
+        public AuthUserPermissions Permissions { get; set; }
+        public List<RoleMappings> RoleMappings { get; set; }
         public string QtcHeaderImage { get; set; }
         public string? DisplayName { get; set; }
         //public List<SearchResultEntity> SearchResults { get; set; } = new List<SearchResultEntity>();

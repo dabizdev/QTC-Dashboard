@@ -37,6 +37,8 @@ namespace QTC.Dashboard.WebApp.Controllers
                 var decodedQuery = HttpUtility.HtmlDecode(queryString); /* Decodes the query string */
                 var parsedQuery = HttpUtility.ParseQueryString(decodedQuery); /* Parses decoded query string*/
                 var lob = parsedQuery["lob"];
+                var username = parsedQuery["username"];
+                var password = parsedQuery["password"];
                 var integration = parsedQuery["integration"];
 
                 Console.WriteLine("Query string: " + queryString);
@@ -68,13 +70,17 @@ namespace QTC.Dashboard.WebApp.Controllers
                 // create an array of strings with the headers needed
                 var neededHeaders = new string[] { "Application Name", "Layer", "Module", "Alert", "AlertTeam", "Severity", "ServerName", "ErrorCode", "Error Message", "Error Date", "User", "View" };
                 vm.headers = neededHeaders.ToList();
-                //GetUserPermissions(vm);
+                GetUserPermissions(vm, username, password);
+
 
                 ////Don't allow access for event referrals to inclinic page
-                //if (!vm.Permissions.HasMedicalRecordsAccess)
-                //{
-                //    return View("~/Views/Shared/Unauthorized.cshtml");
-                //}
+                if (!vm.Permissions.HasMedicalRecordsAccess)
+                {
+                    return View("~/Views/Shared/Unauthorized.cshtml");
+                } else if (username == null)
+                {
+                    return View("~/Views/Shared/Unauthorized.cshtml");
+                }
 
                 vm.HandleRequest();
 
