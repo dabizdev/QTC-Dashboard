@@ -101,3 +101,22 @@ div.dataTables_scrollBody table thead .sorting_desc:after {
 #help-button-container {
     height: 100%;
 }
+
+#help-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    content: "\3f";
+}
+
+    #help-button::after {
+        color: rgba(255, 255, 255, 0.5);
+        content: "\3f";
+    }
+
+    #help-button:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+        content: "\3f";
+    }
