@@ -11,6 +11,10 @@ using Microsoft.AspNetCore.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Session for login time
+builder.Services.AddSession(); //Delete if not inputting custom options
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 // Add services to the container.
 //builder.Services.AddControllersWithViews(options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true).AddRazorRuntimeCompilation();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
@@ -25,7 +29,6 @@ builder.Services.AddTransient<ITenantFactory, TenantFactory>();
 builder.Services.AddDbContext<SqlEntities>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("rhrp")));
 
 var assemblies = new List<Assembly>();
-
 // get the base directory with /Assemblies at the end
 //var directoryPath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "Assemblies");
 var directoryPath = Path.Combine(System.Environment.CurrentDirectory, "Assemblies");
@@ -79,6 +82,8 @@ builder.Services.Scan(scan => scan
     .WithScopedLifetime());
 
 var app = builder.Build();
+
+app.UseSession();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
