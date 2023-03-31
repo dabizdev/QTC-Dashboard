@@ -92,12 +92,6 @@ div.dataTables_scrollBody table thead .sorting_desc:after {
     content: none;
 }
 
-/*Handle table overflow*/
-.table-responsive {
-    overflow-x: scroll;
-}
-
-
 #help-button-container {
     height: 100%;
 }
@@ -111,12 +105,18 @@ div.dataTables_scrollBody table thead .sorting_desc:after {
     content: "\3f";
 }
 
-    #help-button::after {
-        color: rgba(255, 255, 255, 0.5);
-        content: "\3f";
-    }
+#help-button::after {
+    color: rgba(255, 255, 255, 0.5);
+    content: "\3f";
+}
 
-    #help-button:hover {
-        background-color: rgba(255, 255, 255, 0.25);
-        content: "\3f";
+#help-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    content: "\3f";
+}
+
+@media (max-width: 1650px) {
+    .table-responsive {
+        overflow-x: auto;
     }
+}
