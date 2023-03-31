@@ -1,10 +1,10 @@
-﻿using Common.DA.Library;
-using Common.DA.Library.BaseClasses;
+﻿using Common.EF.Library;
+using Common.EF.Library.BaseClasses;
 using Dashboard.Common.DataModels;
 
 namespace Qtc.Dashboard.BusinessLayer.AppBaseClasses
 {
-    public class AppViewModelBase : DAViewModelBase
+    public class AppViewModelBase : EFViewModelBase
     {
         public string Lob { get; set; }
         public string EventAction { get; set; }

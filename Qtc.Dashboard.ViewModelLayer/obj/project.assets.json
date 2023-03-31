@@ -2061,7 +2061,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Common.DA.Library/1.0.0": {
+      "Common.EF.Library/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -2071,10 +2071,10 @@
           "Oracle.ManagedDataAccess.Core": "3.21.90"
         },
         "compile": {
-          "bin/placeholder/Common.DA.Library.dll": {}
+          "bin/placeholder/Common.EF.Library.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Common.DA.Library.dll": {}
+          "bin/placeholder/Common.EF.Library.dll": {}
         }
       },
       "Dashboard.Common/1.0.0": {
@@ -2094,7 +2094,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Common.DA.Library": "1.0.0",
+          "Common.EF.Library": "1.0.0",
           "Dashboard.Common": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.3",
@@ -3840,7 +3840,6 @@
       "path": "system.globalization/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3929,7 +3928,6 @@
       "path": "system.io/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4445,7 +4443,6 @@
       "path": "system.reflection/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4681,7 +4678,6 @@
       "path": "system.reflection.primitives/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4792,7 +4788,6 @@
       "path": "system.resources.resourcemanager/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5926,7 +5921,6 @@
       "path": "system.threading.tasks/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6188,10 +6182,10 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Common.DA.Library/1.0.0": {
+    "Common.EF.Library/1.0.0": {
       "type": "project",
-      "path": "../Common.DA.Library/Common.DA.Library.csproj",
-      "msbuildProject": "../Common.DA.Library/Common.DA.Library.csproj"
+      "path": "../Common.DA.Library/Common.EF.Library.csproj",
+      "msbuildProject": "../Common.DA.Library/Common.EF.Library.csproj"
     },
     "Dashboard.Common/1.0.0": {
       "type": "project",
@@ -6206,6 +6200,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Common.EF.Library >= 1.0.0",
       "Dashboard.Common >= 1.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
       "Oracle.ManagedDataAccess.Core >= 3.21.90",
@@ -6213,19 +6208,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\sefer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj",
+      "projectUniqueName": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj",
       "projectName": "Qtc.Dashboard.ViewModelLayer",
-      "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.ViewModelLayer\\obj\\",
+      "projectPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\Qtc.Dashboard.ViewModelLayer.csproj",
+      "packagesPath": "C:\\Users\\sefer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Qtc.Dashboard.ViewModelLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sefer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6239,11 +6234,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Dashboard.Common\\Dashboard.Common.csproj"
+            "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Common.DA.Library\\Common.EF.Library.csproj": {
+              "projectPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Common.DA.Library\\Common.EF.Library.csproj"
             },
-            "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\QTC\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj"
+            "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj": {
+              "projectPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Dashboard.Common\\Dashboard.Common.csproj"
+            },
+            "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\sefer\\source\\repos\\QTC-Dashboard\\Qtc.Dashboard.BusinessLayer\\Qtc.Dashboard.BusinessLayer.csproj"
             }
           }
         }
@@ -6283,7 +6281,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
